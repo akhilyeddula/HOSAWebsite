@@ -5,7 +5,7 @@
 }
 
 .center {
-	display: block;
+	display: inherit;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0;
@@ -17,16 +17,15 @@
 	max-width: 15%;
 	min-height: auto;
 	max-height: auto;
-	
-	
-	
+	display: inline;
+	padding: 10px;
+	vertical-align: middle;
 }
 
 .container {
 	margin: 0 auto;
 	max-width: 100%;
 	width: 100%;
-	
 }
 
 /* Used to create the arrows */
@@ -44,12 +43,18 @@
 	transform: rotate(45deg);
 }
 
+.inner-navigation-bar {
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
 header .full-navigation-bar {
 	background-color: maroon;
 	margin: 0;
 	padding-bottom: 15px;
 	z-index: 1;
-	
 }
 
 /* Used to style the main menu elements*/
@@ -58,8 +63,9 @@ nav ul .mainnav span a {
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;;
 	color: white;
-	padding: 5px;
+	padding: 10px;
 	text-decoration: none;
+	display: inline;
 }
 
 nav ul .mainnav {
@@ -69,13 +75,81 @@ nav ul .mainnav {
 /* Used to style the sub menu elements*/
 
 nav ul .mainnav ul li {
-	display: inline-block;
+	display: block;
+	padding: 5px;
 }
 
 nav ul .mainnav ul li a {
 	font-size: 14px;
 	font-family: "Trebuchet MS", "sans-serif";
 	color: white;
-	padding: 5px;
+	padding: 5px 5px;
 	text-decoration: none;
+	display: inline;
+}
+
+/*Dropdown Menu*/
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  	position: relative;
+  	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-resources {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-registration {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-resources a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-registration a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-resources a:hover {
+	background-color: #ddd;
+}
+
+.dropdown-registration a:hover {
+	background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-resources {
+	display: block;
+}
+
+.dropdown:hover .dropdown-registration {
+	display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .mainnav {
+	background-color: #3e8e41;
 }
