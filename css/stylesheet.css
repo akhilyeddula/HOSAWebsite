@@ -12,9 +12,14 @@
 }
 
 .logo {
-	width: 50%;
+	width: 15%;
+	min-width: 7%;
 	max-width: 15%;
+	min-height: auto;
 	max-height: auto;
+	
+	
+	
 }
 
 .container {
@@ -24,15 +29,53 @@
 	
 }
 
-header .container {
+/* Used to create the arrows */
+
+.arrow {
+	border: solid white;
+  	border-width: 0 2px 2px 0;
+  	display: inline-block;
+  	padding: 3px;
+	margin: 0px 0px 3px 5px 
+}
+
+.down {
+  	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+header .full-navigation-bar {
 	background-color: maroon;
 	margin: 0;
 	padding-bottom: 15px;
+	z-index: 1;
 	
 }
 
-nav ul span {
-	font-size: 20px;
-	font-family: "Trebuchet MS", Verdana, "sans-serif";
-	color: black;
+/* Used to style the main menu elements*/
+
+nav ul .mainnav span a {
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;;
+	color: white;
+	padding: 5px;
+	text-decoration: none;
+}
+
+nav ul .mainnav {
+	display: inline-grid;
+}
+
+/* Used to style the sub menu elements*/
+
+nav ul .mainnav ul li {
+	display: inline-block;
+}
+
+nav ul .mainnav ul li a {
+	font-size: 14px;
+	font-family: "Trebuchet MS", "sans-serif";
+	color: white;
+	padding: 5px;
+	text-decoration: none;
 }
