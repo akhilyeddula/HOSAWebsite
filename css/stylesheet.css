@@ -1,23 +1,24 @@
 /* CSS Document */
 
-/*logo {
-	
-}*/
+* {
+	box-sizing: border-box
+}
 
 .center {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0;
-	
+}
+
+.logo {
 	width: 50%;
 	max-width: 15%;
 	max-height: auto;
 }
 
 .container {
-	margin: 0;
-	padding-bottom: 15px;
+	margin: 0 auto;
 	max-width: 100%;
 	width: 100%;
 	
@@ -26,6 +27,12 @@
 header .container {
 	background-color: maroon;
 	margin: 0;
-	padding: 0 0 15 0;
+	padding-bottom: 15px;
 	
+}
+
+nav ul span {
+	font-size: 20px;
+	font-family: "Trebuchet MS", Verdana, "sans-serif";
+	color: black;
 }

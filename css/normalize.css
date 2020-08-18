@@ -1,4 +1,6 @@
-/* CSS Document */
+/* Hi there future HOSA Historian! This document is for resetting CSS in browsers. You can Google for more info but the short version of it is that properties that are not specified in the CSS files have defaults used by browsers. 
+Every browser has different defaults so to make sure that webpages are rendered the same on each page, you add sheet that resets the defaults so it will render the same universally. */
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
