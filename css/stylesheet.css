@@ -4,6 +4,10 @@
 	box-sizing: border-box
 }
 
+html {
+	font-size: 100%;
+}
+
 h1 {
 	font-family: Oswald;
 	font-size: 22px;
@@ -23,14 +27,12 @@ p {
 }
 
 .logo {
-	width: 15vw;
-	height: auto;
-	min-width: 15vw;
-	max-width: 100vw;
+	width: auto;
+	height: 150px;
+	min-width: auto;
 	min-height: auto;
-	max-height: auto;
 	display: inline;
-	padding: 10px;
+	padding: 0.625em;
 	vertical-align: middle;
 }
 
@@ -48,13 +50,16 @@ p {
 	padding: 20px;
 }
 
+.font-1-4em {
+	font-size: 2.0em;
+}
 /* Used to create the arrows */
 
 .arrow {
 	border: solid white;
   	border-width: 0 2px 2px 0;
   	display: inline-block;
-  	padding: 3px;
+  	padding: 0.15em;
 	margin: 0px 0px 3px 5px 
 }
 
@@ -62,7 +67,7 @@ p {
 	border: solid black;
   	border-width: 0 2px 2px 0;
   	display: inline-block;
-  	padding: 3px;
+  	padding: 0.15em;
 	margin: 0px 0px 3px 5px 
 }
 
@@ -86,11 +91,11 @@ p {
 }
 
 .full-navigation-bar {
-	position: absolute;
+	position: fixed;
 }
 
 .full-navigation-bar-home {
-	position: absolute;
+	position: fixed;
 }
 
 .fullscreen-pic {
@@ -107,7 +112,7 @@ p {
 }
 
 .left-paragraph-50 {
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	margin-left: 10vw;
 	margin-right: 50vw;
 	text-align: left;
@@ -121,7 +126,7 @@ header .full-navigation-bar {
 }
 
 header .full-navigation-bar-home {
-	background-color: hsla(0,0%,100%,0.50);
+	background-color: rgba(128,0,0,0.65);
 	margin: 0;
 	padding-bottom: 0px;
 	width: 100vw;
@@ -146,7 +151,7 @@ nav .inner-navigation-bar-home .mainnav span a {
 	font-size: 18px;
 	font-weight: 500;
 	font-family: 'Lato', sans-serif;;
-	color: black;
+	color: whitesmoke;
 	padding: 5px 15px;
 	text-decoration: none;
 	display: inline;
