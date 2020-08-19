@@ -16,7 +16,7 @@ h1 {
 }
 
 p {
-	font-family: "Open Sans";
+	font-family: "Lato";
 }
 
 .center {
@@ -26,15 +26,42 @@ p {
 	margin-top: 0;
 }
 
+.center-div {
+	margin: 0 auto;
+	display: table;
+}
+
+.vert-center {
+	vertical-align: middle
+}
+
 .logo {
+	width: auto;
+	height: 140px;
+	min-width: auto;
+	min-height: auto;
+	display: inline-block;
+	padding: 0.3em;
+	margin-top: 0.1em;
+	vertical-align: middle;
+}
+
+.logo-home {
 	width: auto;
 	height: 150px;
 	min-width: auto;
 	min-height: auto;
-	display: inline;
-	padding: 0.625em;
+	display: inline-block;
+	padding: 0.6em;
+	margin-bottom: 0.2em;
 	vertical-align: middle;
 }
+
+/*.logo-back {
+	background-image: url("../assets/images/Middleton HOSA Logo - Red (Transparent).png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}*/
 
 .container {
 	margin: 0 auto;
@@ -47,12 +74,36 @@ p {
 }
 
 .padding-20px {
-	padding: 20px;
+	padding: 5vh 5vw;
 }
 
-.font-1-4em {
+.margin-40px {
+	margin: 5vw;
+}
+
+.font-2-0em {
 	font-size: 2.0em;
 }
+
+.overflow {
+	white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.left-image {
+	width: 19.87vw;
+	height: auto;
+	float: left;
+}
+
+.right-image {
+	width: 19.87vw;
+	height: auto;
+	float: right;
+	z-index: 2
+}
+
 /* Used to create the arrows */
 
 .arrow {
@@ -115,6 +166,7 @@ header .full-navigation-bar {
 	background-color: maroon;
 	margin: 0;
 	padding-bottom: 15px;
+	width: 100vw;
 }
 
 header .full-navigation-bar-home {
@@ -130,7 +182,7 @@ nav ul .mainnav span a {
 	font-size: 18px;
 	font-family: 'Lato', sans-serif;;
 	color: white;
-	padding: 5px 15px;
+	padding: 0.35em 1em;
 	text-decoration: none;
 	display: inline;
 }
@@ -144,7 +196,7 @@ nav .inner-navigation-bar-home .mainnav span a {
 	font-weight: 500;
 	font-family: 'Lato', sans-serif;;
 	color: whitesmoke;
-	padding: 5px 15px;
+	padding: 0.35em 1em;
 	text-decoration: none;
 	display: inline;
 }
