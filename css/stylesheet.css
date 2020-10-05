@@ -1,5 +1,6 @@
 /* CSS Document */
 
+
 * {
 	box-sizing: border-box
 }
@@ -18,6 +19,23 @@ h2 {
 p {
 	font-family: "Lato";
 }
+
+/* Sitewide General Items */
+
+.heading {
+	font-size: 4.0em;
+	text-transform: uppercase;
+}
+
+.paragraphtext {
+	font-size: 1.5em;
+	color: dimgrey;
+}
+
+
+/* Home Page CSS */
+
+/* Navigation Bar */
 
 .center {
 	display: inherit;
@@ -62,259 +80,6 @@ p {
 	vertical-align: middle;
 }
 
-/*.logo-back {
-	background-image: url("../assets/images/Middleton HOSA Logo - Red (Transparent).png");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}*/
-
-/* Home Page CSS */
-
-.container {
-	margin: 0 auto;
-	max-width: 100%;
-	width: 100%;
-}
-
-.grid {
-	display: grid;
-}
-
-#introduction-home {
-	border-bottom: 0.5em solid maroon;
-}
-
-#introduction-home .grid {
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: auto;
-	grid-template-areas: "heading heading"
-		"text1 text2"
-}
-
-#introduction-home .heading {
-	grid-area: heading;
-}
-
-#introduction-home .text1 {
-	grid-area: text1;
-	font-size: 1.6em;
-	padding: 1% 8%;
-	text-align: left;
-}
-
-#introduction-home .text2 {
-	grid-area: text2;
-	font-size: 1.6em;
-	padding: 1% 8%;
-	text-align: left;
-}
-
-#important-dates-home {
-	background-color: black;
-	border-bottom: 0.5em solid maroon;
-}
-
-
-#important-dates-home .grid {
-	display: grid;
-	grid-template-columns: 20% 20% 20% 20% 20%;
-	
-	grid-template-rows: auto;
-	grid-template-areas: "heading heading heading heading heading"
-		"date1 date2 date3 date4 date5"
-}
-
-#important-dates-home .heading {
-	grid-area: heading;
-	color: aliceblue;
-}
-
-#important-dates-home .date1 {
-	grid-area: date1;
-	align-items: center;
-	width: 30%;
-	color: aliceblue;
-	border: 0.2em solid white; 
-	border-radius: 0.2em;
-}
-
-#important-dates-home .date2 {
-	grid-area: date2;
-	align-content: center;	
-	width: 30%;
-	color: aliceblue;
-	border: 0.2em solid white; 
-	border-radius: 0.2em;
-}
-
-#important-dates-home .date3 {
-	grid-area: date3;
-	align-content: center;
-	width: 30%;
-	color: aliceblue;
-	border: 0.2em solid white; 
-	border-radius: 0.2em;
-}
-
-#important-dates-home .date4 {
-	grid-area: date4;
-	align-content: center;
-	width: 30%;
-	color: aliceblue;
-	border: 0.2em solid white; 
-	border-radius: 0.2em;
-}
-
-#important-dates-home .date5 {
-	grid-area: date5;
-	align-content: center;
-	width: 30%;
-	color: aliceblue;
-	border: 0.2em solid white; 
-	border-radius: 0.2em;
-}
-
-#important-dates-home .remindernumber {
-	 text-align: center;
-	
-}
-
-#events-home .grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	
-	grid-template-rows: auto;
-	grid-template-areas: ". heading heading heading heading heading ."
-		". . type1 type2 type3 . ."
-		". type4 type4 . type5 type5 ."
-}
-
-#events-home .heading {
-	grid-area: heading;
-}
-
-#events-home .type1 {
-	grid-area: type1;
-}
-
-#events-home .type2 {
-	grid-area: type2;
-}
-
-#events-home .type3 {
-	grid-area: type3;
-}
-
-#events-home .type4 {
-	grid-area: type4;
-}
-
-#events-home .type5 {
-	grid-area: type5;
-}
-
-.inline {
-	display: inline-block;
-}
-
-.padding-20px {
-	padding: 2em 2em;
-}
-
-.margin-40px {
-	margin: 5vw;
-}
-
-.font-4-0em {
-	font-size: 4.0em;
-}
-
-.caps {
-	text-transform: uppercase;
-}
-
-.italics {
-	font-style: italic;
-}
-
-.paragraphtext {
-	font-size: 1.5em;
-	color: dimgrey;
-}
-
-.overflow {
-	white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
-.left-image {
-	width: 20%;
-	height: auto;
-	float: left;
-	z-index: 1
-}
-
-.center-image {
-	width: 20%;
-	height: auto;
-	float: none;
-	display: inherit;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0;
-}
-
-.right-image {
-	width: 20%;
-	height: auto;
-	float: right;
-	z-index: 2
-}
-
-.thicc-border {
-	border-top: 0.4em solid maroon;
-	border-bottom: 0.5em solid maroon;
-	line-height: 0.0;
-}
-
-
-
-.shadow-box {
-	box-shadow: 10px 10px 5px grey;
-}
-
-.offset-box-top {
-	margin-top: 5vh;
-}
-
-.black-overlay {
-	background-color: rgba(0,0,0,0.25);
-	position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* Used to create the arrows */
-
-.arrow {
-	border: solid white;
-  	border-width: 0 2px 2px 0;
-  	display: inline-block;
-  	padding: 0.15em;
-	margin: 0px 0px 3px 5px 
-}
-
-.down {
-  	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-/* Navigation Bar */
-
 .inner-navigation-bar {
     list-style:none;
     margin:0;
@@ -339,66 +104,8 @@ p {
 	z-index: 2
 }
 
-.fullscreen-pic {
-	object-fit: cover;
-	margin: auto;
-	width: 100%;
-	height: 100vh;
-}
 
-.slideshow-pic {
-	max-width: 100%;
-	max-height:	100vh;
-	
-}
-
-.slideshow-text {
-	z-index: 1;
-}
-
-
-.slideshow-text-big {
-	font-family: 'Poppins', sans-serif;
-	font-size: 6.5em;
-	font-weight: 700;
-	text-shadow:2px 4px  rgba(192,192,192,0.8),
-				2px 5px  rgba(192,192,192,0.8),
-				2px 6px rgba(192,192,192,0.8);
-	color: maroon;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 0.05em;
-	word-spacing: 0.3em;
-	width: 80%;
-	position: absolute;
-  	top: 30%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-}
-
-.slideshow-text-small {
-	font-family: 'Poppins', sans-serif;
-	font-size: 2.75em;
-	font-weight: 600;
-	text-shadow:1px 3px  rgba(192,192,192,0.8),
-				1px 4px  rgba(192,192,192,0.8);
-	color: maroon;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 0.05em;
-	word-spacing: 0.3em;
-	width: 80%;
-	position: absolute;
-  	top: 38%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-}
-
-.mainpagepicture {
-	max-width: 100%;
-	max-height: 100%;
-	display: block;
-}
+/* This is the navigation for every other page (maroon colored)*/
 
 header div.full-navigation-bar {
 	background-color: maroon;
@@ -477,6 +184,243 @@ nav ul .mainnav ul li a {
 	position: relative;
 }
 
+
+/* Home Page - Slideshow */
+
+.fullscreen-pic {
+	object-fit: cover;
+	margin: auto;
+	width: 100%;
+	height: 100vh;
+}
+
+.black-overlay {
+	background-color: rgba(0,0,0,0.25);
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slideshow-pic {
+	max-width: 100%;
+	max-height:	100vh;
+	
+}
+
+.slideshow-text {
+	z-index: 1;
+}
+
+
+.slideshow-text-big {
+	font-family: 'Poppins', sans-serif;
+	font-size: 6.5em;
+	font-weight: 700;
+	text-shadow:2px 4px  
+	rgba(192,192,192,0.8),
+				2px 5px  rgba(192,192,192,0.8),
+				2px 6px rgba(192,192,192,0.8);
+	color: maroon;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.05em;
+	word-spacing: 0.3em;
+	width: 80%;
+	position: absolute;
+  	top: 30%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.slideshow-text-small {
+	font-family: 'Poppins', sans-serif;
+	font-size: 2.75em;
+	font-weight: 600;
+	text-shadow:1px 3px  rgba(192,192,192,0.8),
+				1px 4px  rgba(192,192,192,0.8);
+	color: maroon;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.05em;
+	word-spacing: 0.3em;
+	width: 80%;
+	position: absolute;
+  	top: 38%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.mainpagepicture {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+}
+
+
+/* Home Page - Introduction */
+
+
+#introduction-home {
+	border-bottom: 0.5em solid maroon;
+}
+
+#introduction-home .grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto;
+	grid-template-areas: "heading heading"
+		"text1 text2"
+}
+
+#introduction-home .heading {
+	grid-area: heading;
+}
+
+#introduction-home .text1 {
+	grid-area: text1;
+	font-size: 1.6em;
+	padding: 1% 8%;
+	text-align: left;
+}
+
+#introduction-home .text2 {
+	grid-area: text2;
+	font-size: 1.6em;
+	padding: 1% 8%;
+	text-align: left;
+}
+
+/* Home Page - Important Dates */
+
+#important-dates-home {
+	background-color: black;
+	border-bottom: 0.5em solid maroon;
+}
+
+
+#important-dates-home .grid {
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	
+	grid-template-rows: auto;
+	grid-template-areas: "heading heading heading heading heading"
+		"date1 date2 date3 date4 date5"
+}
+
+#important-dates-home .heading {
+	grid-area: heading;
+	color: aliceblue;
+}
+
+#important-dates-home .date1 {
+	grid-area: date1;
+	align-items: center;
+	width: 30%;
+	color: aliceblue;
+	border: 0.2em solid white; 
+	border-radius: 0.2em;
+}
+
+#important-dates-home .date2 {
+	grid-area: date2;
+	align-content: center;	
+	width: 30%;
+	color: aliceblue;
+	border: 0.2em solid white; 
+	border-radius: 0.2em;
+}
+
+#important-dates-home .date3 {
+	grid-area: date3;
+	align-content: center;
+	width: 30%;
+	color: aliceblue;
+	border: 0.2em solid white; 
+	border-radius: 0.2em;
+}
+
+#important-dates-home .date4 {
+	grid-area: date4;
+	align-content: center;
+	width: 30%;
+	color: aliceblue;
+	border: 0.2em solid white; 
+	border-radius: 0.2em;
+}
+
+#important-dates-home .date5 {
+	grid-area: date5;
+	align-content: center;
+	width: 30%;
+	color: aliceblue;
+	border: 0.2em solid white; 
+	border-radius: 0.2em;
+}
+
+#important-dates-home .remindernumber {
+	 text-align: center;
+	
+}
+
+
+/* Home Page - Events */
+
+
+#events-home .grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	
+	grid-template-rows: auto;
+	grid-template-areas: ". heading heading heading heading heading ."
+		". . type1 type2 type3 . ."
+		". type4 type4 . type5 type5 ."
+}
+
+#events-home .heading {
+	grid-area: heading;
+}
+
+#events-home .type1 {
+	grid-area: type1;
+}
+
+#events-home .type2 {
+	grid-area: type2;
+}
+
+#events-home .type3 {
+	grid-area: type3;
+}
+
+#events-home .type4 {
+	grid-area: type4;
+}
+
+#events-home .type5 {
+	grid-area: type5;
+}
+
+
+/* Used to create the arrows */
+
+
+.arrow {
+	border: solid white;
+  	border-width: 0 2px 2px 0;
+  	display: inline-block;
+  	padding: 0.15em;
+	margin: 0px 0px 3px 5px 
+}
+
+.down {
+  	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+
+
 /* Meet the Officers CSS */
 
 #officers-grid {
@@ -494,7 +438,7 @@ nav ul .mainnav ul li a {
 }
 
 .officer-card {
-	width: 90%;
+	width: 80%;
 	height: auto;
 	max-height: auto;
 	box-shadow: 10px 10px 5px grey;
@@ -562,9 +506,10 @@ nav ul .mainnav ul li a {
 
 /* Event Resources CSS */
 
-.resources-grid {
+#resources-grid {
+	display: grid;
 	grid-template-areas: 
-		"event1 event2 event3 "
+		"event1 event2 event3"
 		"event4 event5 event6"
 		"event7 event8 event9"
 		"event10 event11 event12";
@@ -574,62 +519,59 @@ nav ul .mainnav ul li a {
 }
 
 .event-card {
-	width: 90%;
+	width: 80%;
 	height: auto;
-	max-height: 600px;
+	max-height: auto;
 	box-shadow: 10px 10px 5px grey;
+	border-radius: 5px;
 }
 
-.officer1 {
-	grid-area: officer1;
+.event1 {
+	grid-area: event1;
 }
 
-.officer2 {
-	grid-area: officer2;
+.event2 {
+	grid-area: event2;
 }
 
-.officer3 {
-	grid-area: officer3;
+.event3 {
+	grid-area: event3;
 }
 
-.officer4 {
-	grid-area: officer4;
+.event4 {
+	grid-area: event4;
 }
 
-.officer5 {
-	grid-area: officer5;
+.event5 {
+	event-area: event5;
 }
 
-.officer6 {
-	grid-area: officer6;
+.event6 {
+	event-area: event6;
 }
 
-.officer7 {
-	grid-area: officer7;
+.event7 {
+	event-area: event7;
 }
 
-.officer8 {
-	grid-area: officer8;
+.event8 {
+	event-area: event8;
 }
 
-.officer9 {
-	grid-area: officer9;
+.event9 {
+	event-area: event9;
 }
 
-.officer10 {
-	grid-area: officer10;
+.event10 {
+	event-area: event10;
 }
 
-.officer11 {
-	grid-area: officer11;
+.event11 {
+	event-area: event11;
 }
 
-.officer12 {
-	grid-area: officer12;
-}
-
-.advisors {
-	grid-area: advisors;
+.event12 {
+	grid-area: event12;
 }
 
 
@@ -713,3 +655,42 @@ button.alt:active,
 }
 
 /* End of Paypal CSS*/
+
+/* Miscellaneous */
+
+.padding-20px {
+	padding: 2em 2em;
+}
+
+.margin-40px {
+	margin: 5vw;
+}
+
+
+.italics {
+	font-style: italic;
+}
+
+
+.overflow {
+	white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+.thicc-border {
+	border-top: 0.4em solid maroon;
+	border-bottom: 0.5em solid maroon;
+	line-height: 0.0;
+}
+
+.shadow-box {
+	box-shadow: 10px 10px 5px grey;
+}
+
+/* @media */
+
+@media (max-width : 1160px ){
+
+}
