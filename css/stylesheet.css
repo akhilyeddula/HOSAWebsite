@@ -286,7 +286,7 @@ nav ul .mainnav ul li a {
 	word-spacing: 0.3em;
 	width: 80%;
 	position: absolute;
-  	top: 25%;
+  	top: 24%;
   	left: 50%;
   	transform: translate(-50%, -50%);
 }
@@ -304,7 +304,7 @@ nav ul .mainnav ul li a {
 	word-spacing: 0.3em;
 	width: 80%;
 	position: absolute;
-  	top: 32%;
+  	top: 34%;
   	left: 50%;
   	transform: translate(-50%, -50%);
 }
