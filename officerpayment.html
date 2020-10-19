@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<title>Middleton HOSA | Calendar</title>
+		<title>Middleton HOSA | Club Registration</title>
 		<meta charset="utf-8">
 		<meta name="Description" content="Middleton HOSA Website">
 		<meta name="Keywords" content="Middleton HOSA">
@@ -14,9 +14,13 @@
 		<!-- CSS -->
 		<link href="css/stylesheet.css" type="text/css" rel="stylesheet">
 		<link href="css/normalize.css" type="text/css" rel="stylesheet">
+		<link href="css/paypal.css" type="text/css" rel="stylesheet">
+
 		
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 		
 	</head>
 
@@ -61,18 +65,30 @@
 			</div>
 			</div>
 		</header>
-		
-	<main>
-		<section id="title">
-			<h1 class="title">Calendar</h1>
-		</section>
-		
-		<section id="calender">
-			<iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=bWlkZGxldG9uaG9zYUBnbWFpbC5jb20&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%230B8043" style="border-width:0" width="80%" height="1000px" frameborder="0" scrolling="no"></iframe>
-		</section>
-	</main>
+			
+		<main>
+			<section id="title">
+				<h1 class="title">Officer Payment</h1>
+			</section>
+			
+			<section id="club-form">
+				<div class="container">
+					<p class="paragraphtext center-text">This is where you can pay any amount. If you have any questions, please contact Rishi Nair (@RishiNair) or any of the other officers and we will be more than happy to help.  </p>
+				</div>
+				
+				<div class="center-div">
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+						<input type="hidden" name="cmd" value="_s-xclick" />
+						<input type="hidden" name="hosted_button_id" value="RMJE4X6PQYTBL" />
+						<input type="image" src="https://simple-membership-plugin.com/wp-content/uploads/2018/09/paypal-smart-payment-button-for-simple-membership.jpg" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+						<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="10" height="10" />
+					</form>
+				</div>
+				
+			</section>
+		</main>
 	<div class="footer">
 		<p class="paragraphtext">&copy; Middleton HOSA</p>
     </div>
-	</body>
+</body>
 </html>

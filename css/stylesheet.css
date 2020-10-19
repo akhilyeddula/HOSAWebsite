@@ -1,5 +1,8 @@
 /* CSS Document */
 
+/* Fonts */
+
+
 
 * {
 	box-sizing: border-box;
@@ -651,21 +654,14 @@ padding-left : 25%; /* i made a garage fix but it works */
 	grid-template-areas: 
 		"event1 event2 event3"
 		"event4 event5 event6"
+		"hybridheading hybridheading hybridheading"
 		"event7 event8 event9"
-		"event10 event11 event12";
+		"event10 event11 event12"
+		"event13 none event14";
 	grid-template-columns:33% 33% 33%;
 	grid-template-rows: auto;
 	grid-row-gap: 20px;
 		
-}
-
-.event-card {
-	background-color: whitesmoke;
-	width: 80%;
-	height: auto;
-	max-height: auto;
-	box-shadow: 10px 10px 5px grey;
-	border-radius: 5px;
 }
 
 .event1 {
@@ -685,44 +681,69 @@ padding-left : 25%; /* i made a garage fix but it works */
 }
 
 .event5 {
-	event-area: event5;
+	grid-area: event5;
 }
 
 .event6 {
-	event-area: event6;
+	grid-area: event6;
+}
+
+.hybridheading {
+	grid-area: hybridheading;
+	text-align: center;
 }
 
 .event7 {
-	event-area: event7;
+	grid-area: event7;
 }
 
 .event8 {
-	event-area: event8;
+	grid-area: event8;
 }
 
 .event9 {
-	event-area: event9;
+	grid-area: event9;
 }
 
 .event10 {
-	event-area: event10;
+	grid-area: event10;
 }
 
 .event11 {
-	event-area: event11;
+	grid-area: event11;
 }
 
 .event12 {
 	grid-area: event12;
 }
 
+.event-card {
+	display: grid;
+	grid-template-areas: 
+		"event-name event-name"
+		"event-title event-title"
+		"event-description event-description"
+		"resource-button guidelines-button";
+	grid-template-columns:45% 45%;
+	grid-template-rows: auto;
+	grid-column-gap: 10%;
+	background-color: whitesmoke;
+	width: 80%;
+	height: auto;
+	max-height: auto;
+	box-shadow: 10px 10px 5px grey;
+	border-radius: 5px;
+}
+
 .event-name {
+	grid-area: event-name;
 	font-family: "Oswald", "sans-serif";
 	font-size: 1.6em;
 	text-align: center;
 }
 
 .event-title {
+	grid-area: event-title;
 	font-family: "Oswald", "sans-serif";
 	font-weight: bold;
 	font-size: 1.2em;
@@ -730,21 +751,47 @@ padding-left : 25%; /* i made a garage fix but it works */
 }
 
 .event-description {
+	grid-area: event-description;
 	font-size: 1.0em;
 	text-align: justify;
 	margin: 15px;
 }
 
 .resource-button {
+	grid-area: resource-button;
 	font-family: "Oswald", "sans-serif";
 	font-size: 1.3em;
 	color: black;
 	padding: 12px 24px;
 	background-color: whitesmoke;
 	border: 2px solid maroon; 
+	width: 95%;
+	text-align: center;
+	display: inline-block
+	
 }
 
 .resource-button:hover {
+	transition-duration: 0.4s;
+	color: white;
+	background-color: maroon;
+}
+
+.guidelines-button {
+	grid-area: guidelines-button;
+	font-family: "Oswald", "sans-serif";
+	font-size: 1.3em;
+	color: black;
+	padding: 12px 24px;
+	background-color: whitesmoke;
+	border: 2px solid maroon; 
+	width: 95%;
+	text-align: center;
+	display: inline-block
+	
+}
+
+.guidelines-button:hover {
 	transition-duration: 0.4s;
 	color: white;
 	background-color: maroon;
