@@ -657,7 +657,8 @@ padding-left : 25%; /* i made a garage fix but it works */
 		"hybridheading hybridheading hybridheading"
 		"event7 event8 event9"
 		"event10 event11 event12"
-		"event13 none event14";
+		"event13 event14 event15"
+		"event16 event17 event18";
 	grid-template-columns:33% 33% 33%;
 	grid-template-rows: auto;
 	grid-row-gap: 20px;
@@ -715,6 +716,22 @@ padding-left : 25%; /* i made a garage fix but it works */
 
 .event12 {
 	grid-area: event12;
+}
+
+.event13 {
+	grid-area: event13;
+}
+
+.event14 {
+	grid-area: event14;
+}
+
+.event15 {
+	grid-area: event15;
+}
+
+.event16 {
+	grid-area: event16;
 }
 
 .event-card {
