@@ -721,7 +721,8 @@ padding-left : 25%; /* i made a garage fix but it works */
 		"hybrid-event1 hybrid-event2 hybrid-event3"
 		"hybrid-event4 hybrid-event5 hybrid-event6"
 		"hybrid-event7 hybrid-event8 hybrid-event9"
-		"hybrid-event10 hybrid-event11 hybrid-event12";
+		"hybrid-event10 hybrid-event11 hybrid-event12"
+		"hybrid-event13 hybrid-event14 hybrid-event15";
 	grid-template-columns:33% 33% 33%;
 	grid-template-rows: auto;
 	grid-row-gap: 20px;
@@ -748,7 +749,7 @@ padding-left : 25%; /* i made a garage fix but it works */
 }
 
 .hybrid-event5 {
-	grid-area: hybrid-event1;
+	grid-area: hybrid-event5;
 }
 
 .hybrid-event6 {
@@ -777,6 +778,18 @@ padding-left : 25%; /* i made a garage fix but it works */
 
 .hybrid-event12 {
 	grid-area: hybrid-event12;
+}
+
+.hybrid-event13 {
+	grid-area: hybrid-event13;
+}
+
+.hybrid-event14 {
+	grid-area: hybrid-event14;
+}
+
+.hybrid-event15 {
+	grid-area: hybrid-event15;
 }
 
 .event-card {
