@@ -649,89 +649,134 @@ padding-left : 25%; /* i made a garage fix but it works */
 
 /* Event Resources CSS */
 
-#resources-grid {
+#resources-grid-objective {
 	display: grid;
 	grid-template-areas: 
-		"event1 event2 event3"
-		"event4 event5 event6"
-		"hybridheading hybridheading hybridheading"
-		"event7 event8 event9"
-		"event10 event11 event12"
-		"event13 event14 event15"
-		"event16 event17 event18";
+		"objectiveheading objectiveheading objectiveheading"
+		"objective-event1 objective-event2 objective-event3"
+		"objective-event4 objective-event5 objective-event6"
+		"objective-event7 objective-event8 objective-event9"
+		"objective-event10 objective-event11 objective-event12";
 	grid-template-columns:33% 33% 33%;
 	grid-template-rows: auto;
 	grid-row-gap: 20px;
-		
 }
 
-.event1 {
-	grid-area: event1;
+.objective-resource-heading {
+	grid-area: objectiveheading;
 }
 
-.event2 {
-	grid-area: event2;
+.objective-event1 {
+	grid-area: objective-event1;
 }
 
-.event3 {
-	grid-area: event3;
+.objective-event2 {
+	grid-area: objective-event2;
 }
 
-.event4 {
-	grid-area: event4;
+.objective-event3 {
+	grid-area: objective-event3;
 }
 
-.event5 {
-	grid-area: event5;
+.objective-event4 {
+	grid-area: objective-event4;
 }
 
-.event6 {
-	grid-area: event6;
+.objective-event5 {
+	grid-area: objective-event5;
 }
 
-.hybridheading {
+.objective-event6 {
+	grid-area: objective-event6;
+}
+
+.objective-event7 {
+	grid-area: objective-event7;
+}
+
+.objective-event8 {
+	grid-area: objective-event8;
+}
+
+.objective-event9 {
+	grid-area: objective-event9;
+}
+
+.objective-event10 {
+	grid-area: objective-event10;
+}
+
+.objective-event11 {
+	grid-area: objective-event11;
+}
+
+.objective-event12 {
+	grid-area: objective-event12;
+}
+
+#resources-grid-hybrid {
+	display: grid;
+	grid-template-areas: 
+		"hybridheading hybridheading hybridheading"
+		"hybrid-event1 hybrid-event2 hybrid-event3"
+		"hybrid-event4 hybrid-event5 hybrid-event6"
+		"hybrid-event7 hybrid-event8 hybrid-event9"
+		"hybrid-event10 hybrid-event11 hybrid-event12";
+	grid-template-columns:33% 33% 33%;
+	grid-template-rows: auto;
+	grid-row-gap: 20px;
+}
+
+.hybrid-resource-heading {
 	grid-area: hybridheading;
-	text-align: center;
 }
 
-.event7 {
-	grid-area: event7;
+.hybrid-event1 {
+	grid-area: hybrid-event1;
 }
 
-.event8 {
-	grid-area: event8;
+.hybrid-event2 {
+	grid-area: hybrid-event2;
 }
 
-.event9 {
-	grid-area: event9;
+.hybrid-event3 {
+	grid-area: hybrid-event3;
 }
 
-.event10 {
-	grid-area: event10;
+.hybrid-event4 {
+	grid-area: hybrid-event4;
 }
 
-.event11 {
-	grid-area: event11;
+.hybrid-event5 {
+	grid-area: hybrid-event1;
 }
 
-.event12 {
-	grid-area: event12;
+.hybrid-event6 {
+	grid-area: hybrid-event6;
 }
 
-.event13 {
-	grid-area: event13;
+.hybrid-event7 {
+	grid-area: hybrid-event7;
 }
 
-.event14 {
-	grid-area: event14;
+.hybrid-event8 {
+	grid-area: hybrid-event8;
 }
 
-.event15 {
-	grid-area: event15;
+.hybrid-event9 {
+	grid-area: hybrid-event9;
 }
 
-.event16 {
-	grid-area: event16;
+.hybrid-event10 {
+	grid-area: hybrid-event10;
+}
+
+.hybrid-event11 {
+	grid-area: hybrid-event11;
+}
+
+.hybrid-event12 {
+	grid-area: hybrid-event12;
 }
 
 .event-card {
