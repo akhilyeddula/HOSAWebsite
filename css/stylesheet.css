@@ -14,16 +14,22 @@ html {
 
 h1 {
   font-family: "Oswald", "sans-serif";
-  font-size: 26px;
+  font-size: 1.8px;
   font-weight: 600;
   text-align: center;
 }
 
 h2 {
 	font-family: "Oswald", "sans-serif";
-	font-size: 22px;
+	font-size: 1.6px;
 	font-weight: 600;
 	text-align: center;
+}
+
+h3 {
+	font-family: "Lato";
+	font-weight: bold;
+	font-size: 1.2em;
 }
 
 h5 {
@@ -71,7 +77,11 @@ p {
 }
 
 .container {
-	padding: 1% 3%;
+	padding: 10px 3%;
+}
+
+.ten-container {
+	padding: 10px 10%;
 }
 
 /* Home Page CSS */
@@ -101,7 +111,7 @@ p {
 
 .logo {
 	width: auto;
-	height: 140px;
+	height: 50vh;
 	min-width: auto;
 	min-height: auto;
 	display: inline-block;
@@ -112,7 +122,7 @@ p {
 
 .logo-home {
 	width: auto;
-	height: 150px;
+	height: 20vh;
 	min-width: auto;
 	min-height: auto;
 	display: inline-block;
@@ -152,7 +162,7 @@ header div.full-navigation-bar {
 	background-color: maroon;
 	margin: 0;
 	padding-bottom: 15px;
-	width: 100%;
+	width: 100vw;
 	z-index: 3;
 }
 
@@ -160,7 +170,7 @@ header div.full-navigation-bar-home {
 	background-color: rgba(0,0,0,0.5);
 	margin: 0;
 	padding-bottom: 0px;
-	width: 100%;
+	width: 100vw;
 }
 
 /* Used to style the main menu elements*/
@@ -643,9 +653,14 @@ nav ul .mainnav ul li a {
 /* Event Registration*/
 
 #form-text{
-padding-left : 25%; /* i made a garage fix but it works */
+	padding-left : 25%; /* i made a garbage fix but it works */
 }
 
+/* Community Service CSS */
+
+.opportunity-heading {
+	text-align: left;
+}
 
 /* Event Resources CSS */
 
@@ -656,7 +671,8 @@ padding-left : 25%; /* i made a garage fix but it works */
 		"objective-event1 objective-event2 objective-event3"
 		"objective-event4 objective-event5 objective-event6"
 		"objective-event7 objective-event8 objective-event9"
-		"objective-event10 objective-event11 objective-event12";
+		"objective-event10 objective-event11 objective-event12"
+		"objective-event13 none objective-event14";;
 	grid-template-columns:33% 33% 33%;
 	grid-template-rows: auto;
 	grid-row-gap: 20px;
@@ -714,6 +730,14 @@ padding-left : 25%; /* i made a garage fix but it works */
 	grid-area: objective-event12;
 }
 
+.objective-event13 {
+	grid-area: objective-event13;
+}
+
+.objective-event14 {
+	grid-area: objective-event14;
+}
+
 #resources-grid-hybrid {
 	display: grid;
 	grid-template-areas: 
@@ -722,7 +746,8 @@ padding-left : 25%; /* i made a garage fix but it works */
 		"hybrid-event4 hybrid-event5 hybrid-event6"
 		"hybrid-event7 hybrid-event8 hybrid-event9"
 		"hybrid-event10 hybrid-event11 hybrid-event12"
-		"hybrid-event13 hybrid-event14 hybrid-event15";
+		"hybrid-event13 hybrid-event14 hybrid-event15"
+		"hybrid-event16 none hybrid-event17";
 	grid-template-columns:33% 33% 33%;
 	grid-template-rows: auto;
 	grid-row-gap: 20px;
@@ -790,6 +815,124 @@ padding-left : 25%; /* i made a garage fix but it works */
 
 .hybrid-event15 {
 	grid-area: hybrid-event15;
+}
+
+#resources-grid-performance {
+	display: grid;
+	grid-template-areas: 
+		"performanceheading performanceheading performanceheading"
+		"performance-event1 performance-event2 performance-event3"
+		"performance-event4 performance-event5 performance-event6"
+		"performance-event7 performance-event8 performance-event9"
+		"performance-event10 performance-event11 performance-event12"
+		"performance-event13 performance-event14 performance-event15"
+		"performance-event16 performance-event17 performance-event18";
+	grid-template-columns:33% 33% 33%;
+	grid-template-rows: auto;
+	grid-row-gap: 20px;
+}
+
+.performance-resource-heading {
+	grid-area: performanceheading;
+}
+
+.performance-event1 {
+	grid-area: performance-event1;
+}
+
+.performance-event2 {
+	grid-area: performance-event2;
+}
+
+.performance-event3 {
+	grid-area: performance-event3;
+}
+
+.performance-event4 {
+	grid-area: performance-event4;
+}
+
+.performance-event5 {
+	grid-area: performance-event5;
+}
+
+.performance-event6 {
+	grid-area: performance-event6;
+}
+
+.performance-event7 {
+	grid-area: performance-event7;
+}
+
+.performance-event8 {
+	grid-area: performance-event8;
+}
+
+.performance-event9 {
+	grid-area: performance-event9;
+}
+
+.performance-event10 {
+	grid-area: performance-event10;
+}
+
+.performance-event11 {
+	grid-area: performance-event11;
+}
+
+.performance-event12 {
+	grid-area: performance-event12;
+}
+
+.performance-event13 {
+	grid-area: performance-event13;
+}
+
+.performance-event14 {
+	grid-area: performance-event14;
+}
+
+.performance-event15 {
+	grid-area: performance-event15;
+}
+
+#resources-grid-recognition {
+	display: grid;
+	grid-template-areas: 
+		"recognitionheading recognitionheading recognitionheading"
+		"recognition-event1 recognition-event2 recognition-event3"
+		"recognition-event4 recognition-event5 recognition-event6";
+	grid-template-columns:33% 33% 33%;
+	grid-template-rows: auto;
+	grid-row-gap: 20px;
+}
+
+.recognition-resource-heading {
+	grid-area: recognitionheading;
+}
+
+.recognition-event1 {
+	grid-area: recognition-event1;
+}
+
+.recognition-event2 {
+	grid-area: recognition-event2;
+}
+
+.recognition-event3 {
+	grid-area: recognition-event3;
+}
+
+.recognition-event4 {
+	grid-area: recognition-event4;
+}
+
+.recognition-event5 {
+	grid-area: recognition-event5;
+}
+
+.recognition-event6 {
+	grid-area: recognition-event6;
 }
 
 .event-card {
@@ -871,6 +1014,30 @@ padding-left : 25%; /* i made a garage fix but it works */
 	color: white;
 	background-color: maroon;
 }
+
+
+.resource-event-card {
+	display: grid;
+	grid-template-areas: 
+		"event-name event-name"
+		"event-title event-title"
+		"event-description event-description"
+		"guidelines-button guidelines-button";
+	grid-template-columns:45% 45%;
+	grid-template-rows: auto;
+	grid-column-gap: 10%;
+	background-color: whitesmoke;
+	width: 80%;
+	height: auto;
+	max-height: auto;
+	box-shadow: 10px 10px 5px grey;
+	border-radius: 5px;
+}
+
+
+/* Sponsorship CSS */
+
+sponsorship-image
 
 /* Scholarships CSS */
 
