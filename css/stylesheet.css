@@ -2,8 +2,6 @@
 
 /* Fonts */
 
-
-
 * {
 	box-sizing: border-box;
 }
@@ -13,10 +11,10 @@ html {
 }
 
 h1 {
-  font-family: "Oswald", "sans-serif";
-  font-size: 1.8px;
-  font-weight: 600;
-  text-align: center;
+	font-family: "Oswald", "sans-serif";
+	font-size: 1.8px;
+	font-weight: 600;
+	text-align: center;
 }
 
 h2 {
@@ -42,12 +40,10 @@ p {
 	font-family: "Lato";
 }
 
-
-
 /* Sitewide General Items */
 
 .title {
-  font-size : 4.15em;
+	font-size: 4.15em;
 }
 
 .heading {
@@ -62,18 +58,18 @@ p {
 }
 
 .footer {
-  	display: flex;
+	display: flex;
 	justify-content: center;
 	align-content: center;
-	width : 100%;
-  	height : 50px;
-  	margin-top: 20px; 
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
 	background-color: maroon;
 }
 
 .footer p {
-  	color : #fff;
-  	font-size : 0.9em;
+	color: #fff;
+	font-size: 0.9em;
 }
 
 .container {
@@ -97,7 +93,7 @@ p {
 
 .center-div {
 	margin: 0 auto;
-	display: table;	
+	display: table;
 }
 
 .center-vertical {
@@ -132,17 +128,17 @@ p {
 }
 
 .inner-navigation-bar {
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
 
 .inner-navigation-bar-home {
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
 
 .full-navigation-bar {
@@ -155,7 +151,6 @@ p {
 	z-index: 4;
 }
 
-
 /* This is the navigation for every other page (maroon colored)*/
 
 header div.full-navigation-bar {
@@ -167,7 +162,7 @@ header div.full-navigation-bar {
 }
 
 header div.full-navigation-bar-home {
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	margin: 0;
 	padding-bottom: 0px;
 	width: 100vw;
@@ -177,7 +172,8 @@ header div.full-navigation-bar-home {
 
 nav ul li.mainnav span a {
 	font-size: 1.1vw;
-	font-family: 'Lato', sans-serif;;
+	font-family: 'Lato', sans-serif;
+	;
 	color: white;
 	padding: 0.35em 1em;
 	text-decoration: none;
@@ -191,7 +187,8 @@ nav ul li.mainnav {
 nav div.inner-navigation-bar-home .mainnav span a {
 	font-size: 18px;
 	font-weight: 500;
-	font-family: 'Lato', sans-serif;;
+	font-family: 'Lato', sans-serif;
+	;
 	color: whitesmoke;
 	padding: 0.35em 1em;
 	text-decoration: none;
@@ -221,22 +218,22 @@ nav div.inner-navigation-bar-home .mainnav ul li a {
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+	z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+	display: block;
 }
 
 nav ul .mainnav ul li {
@@ -255,7 +252,6 @@ nav ul .mainnav ul li a {
 	position: relative;
 }
 
-
 /* Home Page - Slideshow */
 
 .fullscreen-pic {
@@ -263,41 +259,35 @@ nav ul .mainnav ul li a {
 	margin: 0;
 	width: 100%;
 	height: 100vh;
-	position: absolute;
+	position: relative;
 }
 
 .slideshow-pic {
 	max-width: 100%;
-	max-height:	100vh;
+	max-height: 100vh;
 	z-index: 1;
 	position: relative;
 }
 
 .black-overlay {
-	background-color: rgba(0,0,0,0.25);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+	background-color: rgba(0, 0, 0, 0.25);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	z-index: 2;
 	position: relative;
 }
 
-
 .slideshow-text {
 	z-index: 3;
-
 }
-
 
 .slideshow-text-big {
 	font-family: 'Poppins', sans-serif;
 	font-size: 5em;
 	font-weight: 700;
-	text-shadow:2px 4px  
-	rgba(192,192,192,0.8),
-				2px 5px  rgba(192,192,192,0.8),
-				2px 6px rgba(192,192,192,0.8);
+	text-shadow: 2px 4px rgba(192, 192, 192, 0.8), 2px 5px rgba(192, 192, 192, 0.8), 2px 6px rgba(192, 192, 192, 0.8);
 	color: maroon;
 	text-transform: uppercase;
 	text-align: center;
@@ -305,8 +295,8 @@ nav ul .mainnav ul li a {
 	word-spacing: 0.3em;
 	width: 80%;
 	top: 18vh;
-  	left: 50vw;
-  	transform: translate(-50%, -50%);
+	left: 50vw;
+	transform: translate(-50%, -50%);
 	position: relative;
 	z-index: 3;
 }
@@ -315,8 +305,7 @@ nav ul .mainnav ul li a {
 	font-family: 'Poppins', sans-serif;
 	font-size: 2.35em;
 	font-weight: 600;
-	text-shadow:1px 3px  rgba(192,192,192,0.8),
-				1px 4px  rgba(192,192,192,0.8);
+	text-shadow: 1px 3px rgba(192, 192, 192, 0.8), 1px 4px rgba(192, 192, 192, 0.8);
 	color: maroon;
 	text-align: center;
 	text-transform: uppercase;
@@ -324,15 +313,13 @@ nav ul .mainnav ul li a {
 	word-spacing: 0.3em;
 	width: 80%;
 	top: 28vh;
-  	left: 50vw;
-  	transform: translate(-50%, -50%);
+	left: 50vw;
+	transform: translate(-50%, -50%);
 	position: relative;
 	z-index: 3;
 }
 
-
 /* Home Page - Introduction */
-
 
 #introduction-home {
 	border-bottom: 0.5em solid maroon;
@@ -342,8 +329,7 @@ nav ul .mainnav ul li a {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: auto;
-	grid-template-areas: "heading heading"
-		"text1 text2"
+	grid-template-areas: "heading heading" "text1 text2"
 }
 
 #introduction-home .heading {
@@ -371,11 +357,10 @@ nav ul .mainnav ul li a {
 	border-bottom: 0.5em solid maroon;
 }
 
-
 #important-dates-home .flex {
 	display: flex;
 	justify-content: space-around;
-  	flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 #important-dates-home .heading {
@@ -385,38 +370,30 @@ nav ul .mainnav ul li a {
 
 #important-dates-home .date1container {
 	display: grid;
-	grid-template-areas: 
-		". . ."
-		". . ."
-		". remindernumber ."
-		". . ."
-		". remindermonth .";
+	grid-template-areas: ". . ." ". . ." ". remindernumber ." ". . ." ". remindermonth .";
 	grid-template-columns: 33.3% 33.3% 33.3%;
 	align-items: center;
 }
 
 #important-dates-home .date1 {
 	display: grid;
-	grid-template-areas: 
-		". . ."
-		". remindernumber ."
-		". remindermonth .";
+	grid-template-areas: ". . ." ". remindernumber ." ". remindermonth .";
 	grid-template-columns: 33.3% 33.3% 33.3%;
 	align-items: center;
 	width: 100px;
 	height: 100px;
 	color: aliceblue;
-	border: 0.2em solid white; 
+	border: 0.2em solid white;
 	border-radius: 0.2em;
 }
 
 #important-dates-home .date2 {
 	display: grid;
-	align-content: center;	
+	align-content: center;
 	width: 100px;
 	height: 100px;
 	color: aliceblue;
-	border: 0.2em solid white; 
+	border: 0.2em solid white;
 	border-radius: 0.2em;
 }
 
@@ -428,7 +405,7 @@ nav ul .mainnav ul li a {
 	width: 100px;
 	height: 100px;
 	color: aliceblue;
-	border: 0.2em solid white; 
+	border: 0.2em solid white;
 	border-radius: 0.2em;
 }
 
@@ -438,7 +415,7 @@ nav ul .mainnav ul li a {
 	width: 100px;
 	height: 100px;
 	color: aliceblue;
-	border: 0.2em solid white; 
+	border: 0.2em solid white;
 	border-radius: 0.2em;
 }
 
@@ -448,12 +425,12 @@ nav ul .mainnav ul li a {
 	width: 100px;
 	height: 100px;
 	color: aliceblue;
-	border: 0.2em solid white; 
+	border: 0.2em solid white;
 	border-radius: 0.2em;
 }
 
 #important-dates-home .remindernumber {
- 	grid-area: remindernumber;
+	grid-area: remindernumber;
 	font-family: "Lato";
 	font-size: 1.5em;
 	font-weight: 500;
@@ -461,7 +438,7 @@ nav ul .mainnav ul li a {
 }
 
 #important-dates-home .remindermonth {
- 	grid-area: remindermonth;
+	grid-area: remindermonth;
 	font-family: "Lato";
 }
 
@@ -469,18 +446,13 @@ nav ul .mainnav ul li a {
 	color: white;
 }
 
-
 /* Home Page - Events */
-
 
 #events-home .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	
 	grid-template-rows: auto;
-	grid-template-areas: ". heading heading heading heading heading ."
-		". . type1 type2 type3 . ."
-		". type4 type4 . type5 type5 ."
+	grid-template-areas: ". heading heading heading heading heading ." ". . type1 type2 type3 . ." ". type4 type4 . type5 type5 ."
 }
 
 #events-home .heading {
@@ -507,20 +479,18 @@ nav ul .mainnav ul li a {
 	grid-area: type5;
 }
 
-
 /* Used to create the arrows */
-
 
 .arrow {
 	border: solid white;
-  	border-width: 0 2px 2px 0;
-  	display: inline-block;
-  	padding: 0.15em;
-	margin: 0px 0px 3px 5px 
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 0.15em;
+	margin: 0px 0px 3px 5px
 }
 
 .down {
-  	-webkit-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
 
@@ -534,7 +504,7 @@ nav ul .mainnav ul li a {
 
 .mainpagepicturecontainer {
 	max-width: 100%;
-	max-height:	100vh;
+	max-height: 100vh;
 }
 
 .mainpagepicture {
@@ -548,16 +518,10 @@ nav ul .mainnav ul li a {
 
 #officers-grid {
 	display: grid;
-	grid-template-areas: 
-		"officer1 officer2 officer3"
-		"officer4 officer5 officer6"
-		"officer7 officer8 officer9"
-		"officer10 officer11 officer12"
-		". advisors .";
-	grid-template-columns:33% 33% 33%;
+	grid-template-areas: "officer1 officer2 officer3" "officer4 officer5 officer6" "officer7 officer8 officer9" "officer10 officer11 officer12" ". advisors .";
+	grid-template-columns: 33% 33% 33%;
 	grid-template-rows: auto;
 	grid-row-gap: 20px;
-		
 }
 
 .officer-card {
@@ -572,8 +536,8 @@ nav ul .mainnav ul li a {
 }
 
 .officer-image {
-	max-width:100%;
-	max-height:100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .officer1 {
@@ -655,13 +619,11 @@ nav ul .mainnav ul li a {
 
 /* Club Registration CSS */
 
-
-
-
 /* Event Registration*/
 
-#form-text{
-	padding-left : 25%; /* i made a garbage fix but it works */
+#form-text {
+	padding-left: 25%;
+	/* i made a garbage fix but it works */
 }
 
 /* Community Service CSS */
@@ -674,14 +636,9 @@ nav ul .mainnav ul li a {
 
 #resources-grid-objective {
 	display: grid;
-	grid-template-areas: 
-		"objectiveheading objectiveheading objectiveheading"
-		"objective-event1 objective-event2 objective-event3"
-		"objective-event4 objective-event5 objective-event6"
-		"objective-event7 objective-event8 objective-event9"
-		"objective-event10 objective-event11 objective-event12"
-		"objective-event13 none objective-event14";;
-	grid-template-columns:33% 33% 33%;
+	grid-template-areas: "objectiveheading objectiveheading objectiveheading" "objective-event1 objective-event2 objective-event3" "objective-event4 objective-event5 objective-event6" "objective-event7 objective-event8 objective-event9" "objective-event10 objective-event11 objective-event12" "objective-event13 none objective-event14";
+	;
+	grid-template-columns: 33% 33% 33%;
 	grid-template-rows: auto;
 	grid-row-gap: 20px;
 }
@@ -748,15 +705,8 @@ nav ul .mainnav ul li a {
 
 #resources-grid-hybrid {
 	display: grid;
-	grid-template-areas: 
-		"hybridheading hybridheading hybridheading"
-		"hybrid-event1 hybrid-event2 hybrid-event3"
-		"hybrid-event4 hybrid-event5 hybrid-event6"
-		"hybrid-event7 hybrid-event8 hybrid-event9"
-		"hybrid-event10 hybrid-event11 hybrid-event12"
-		"hybrid-event13 hybrid-event14 hybrid-event15"
-		"hybrid-event16 none hybrid-event17";
-	grid-template-columns:33% 33% 33%;
+	grid-template-areas: "hybridheading hybridheading hybridheading" "hybrid-event1 hybrid-event2 hybrid-event3" "hybrid-event4 hybrid-event5 hybrid-event6" "hybrid-event7 hybrid-event8 hybrid-event9" "hybrid-event10 hybrid-event11 hybrid-event12" "hybrid-event13 hybrid-event14 hybrid-event15" "hybrid-event16 none hybrid-event17";
+	grid-template-columns: 33% 33% 33%;
 	grid-template-rows: auto;
 	grid-row-gap: 20px;
 }
@@ -827,15 +777,8 @@ nav ul .mainnav ul li a {
 
 #resources-grid-performance {
 	display: grid;
-	grid-template-areas: 
-		"performanceheading performanceheading performanceheading"
-		"performance-event1 performance-event2 performance-event3"
-		"performance-event4 performance-event5 performance-event6"
-		"performance-event7 performance-event8 performance-event9"
-		"performance-event10 performance-event11 performance-event12"
-		"performance-event13 performance-event14 performance-event15"
-		"performance-event16 performance-event17 performance-event18";
-	grid-template-columns:33% 33% 33%;
+	grid-template-areas: "performanceheading performanceheading performanceheading" "performance-event1 performance-event2 performance-event3" "performance-event4 performance-event5 performance-event6" "performance-event7 performance-event8 performance-event9" "performance-event10 performance-event11 performance-event12" "performance-event13 performance-event14 performance-event15" "performance-event16 performance-event17 performance-event18";
+	grid-template-columns: 33% 33% 33%;
 	grid-template-rows: auto;
 	grid-row-gap: 20px;
 }
@@ -906,11 +849,8 @@ nav ul .mainnav ul li a {
 
 #resources-grid-recognition {
 	display: grid;
-	grid-template-areas: 
-		"recognitionheading recognitionheading recognitionheading"
-		"recognition-event1 recognition-event2 recognition-event3"
-		"recognition-event4 recognition-event5 recognition-event6";
-	grid-template-columns:33% 33% 33%;
+	grid-template-areas: "recognitionheading recognitionheading recognitionheading" "recognition-event1 recognition-event2 recognition-event3" "recognition-event4 recognition-event5 recognition-event6";
+	grid-template-columns: 33% 33% 33%;
 	grid-template-rows: auto;
 	grid-row-gap: 20px;
 }
@@ -945,12 +885,8 @@ nav ul .mainnav ul li a {
 
 .event-card {
 	display: grid;
-	grid-template-areas: 
-		"event-name event-name"
-		"event-title event-title"
-		"event-description event-description"
-		"resource-button guidelines-button";
-	grid-template-columns:45% 45%;
+	grid-template-areas: "event-name event-name" "event-title event-title" "event-description event-description" "resource-button guidelines-button";
+	grid-template-columns: 45% 45%;
 	grid-template-rows: auto;
 	grid-column-gap: 10%;
 	background-color: whitesmoke;
@@ -990,11 +926,10 @@ nav ul .mainnav ul li a {
 	color: black;
 	padding: 12px 24px;
 	background-color: whitesmoke;
-	border: 2px solid maroon; 
+	border: 2px solid maroon;
 	width: 95%;
 	text-align: center;
 	display: inline-block
-	
 }
 
 .resource-button:hover {
@@ -1010,11 +945,10 @@ nav ul .mainnav ul li a {
 	color: black;
 	padding: 12px 24px;
 	background-color: whitesmoke;
-	border: 2px solid maroon; 
+	border: 2px solid maroon;
 	width: 95%;
 	text-align: center;
 	display: inline-block
-	
 }
 
 .guidelines-button:hover {
@@ -1023,15 +957,10 @@ nav ul .mainnav ul li a {
 	background-color: maroon;
 }
 
-
 .resource-event-card {
 	display: grid;
-	grid-template-areas: 
-		"event-name event-name"
-		"event-title event-title"
-		"event-description event-description"
-		"guidelines-button guidelines-button";
-	grid-template-columns:45% 45%;
+	grid-template-areas: "event-name event-name" "event-title event-title" "event-description event-description" "guidelines-button guidelines-button";
+	grid-template-columns: 45% 45%;
 	grid-template-rows: auto;
 	grid-column-gap: 10%;
 	background-color: whitesmoke;
@@ -1042,11 +971,9 @@ nav ul .mainnav ul li a {
 	border-radius: 5px;
 }
 
-
 /* Sponsorship CSS */
 
 sponsorship-image
-
 /* Scholarships CSS */
 
 #scholarship-info {
@@ -1071,11 +998,11 @@ sponsorship-image
 	width: 20%;
 }
 
-.newsletters-bullet > a:hover {
+.newsletters-bullet>a:hover {
 	background-color: white;
 }
 
-.newletters-bullet > a:link {
+.newletters-bullet>a:link {
 	font-family: "Oswald", "sans-serif";
 	font-size: 1.3em;
 	color: black;
@@ -1100,13 +1027,11 @@ sponsorship-image
 	font-style: italic;
 }
 
-
 .overflow {
 	white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
+	overflow-x: auto;
+	overflow-y: hidden;
 }
-
 
 .thicc-border {
 	border-top: 0.4em solid maroon;
@@ -1118,10 +1043,8 @@ sponsorship-image
 	box-shadow: 10px 10px 5px grey;
 }
 
-
 @media screen and (max-width: 1080px) {
 	.slideshow-text-big {
 		font-size: 5em;
 	}
 }
-
