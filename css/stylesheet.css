@@ -107,7 +107,7 @@ p {
 
 .logo {
 	width: auto;
-	height: 15vh;
+	height: 150px;
 	min-width: auto;
 	min-height: auto;
 	display: inline-block;
@@ -118,7 +118,7 @@ p {
 
 .logo-home {
 	width: auto;
-	height: 15vh;
+	height: 150px;
 	min-width: auto;
 	min-height: auto;
 	display: inline-block;
@@ -131,19 +131,26 @@ p {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	text-align: center;
+	margin: auto 1%;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
 }
 
 .inner-navigation-bar-home {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	text-align: center;
+	margin: auto 1%;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	
 }
 
 .full-navigation-bar {
 	position: relative;
-	z-index: 1
+	z-index: 4;
 }
 
 .full-navigation-bar-home {
@@ -157,7 +164,7 @@ header div.full-navigation-bar {
 	background-color: maroon;
 	margin: 0;
 	padding-bottom: 15px;
-	width: 100%;
+	width: 100vw;
 	z-index: 3;
 }
 
@@ -171,48 +178,28 @@ header div.full-navigation-bar-home {
 /* Used to style the main menu elements*/
 
 nav ul li.mainnav span a {
-	font-size: 1.1vw;
+	font-size: 18px;
 	font-family: 'Lato', sans-serif;
 	;
 	color: white;
-	padding: 0.35em 1em;
+	padding: 10px 10px;
 	text-decoration: none;
 	display: inline;
-}
-
-nav ul li.mainnav {
-	display: inline-grid;
-}
-
-nav div.inner-navigation-bar-home .mainnav span a {
-	font-size: 18px;
-	font-weight: 500;
-	font-family: 'Lato', sans-serif;
-	;
-	color: whitesmoke;
-	padding: 0.35em 1em;
-	text-decoration: none;
-	display: inline;
-}
-
-nav div.inner-navigation-bar-home .mainnav {
-	display: inline-grid;
 }
 
 /* Used to style the sub menu elements*/
 
-nav div.inner-navigation-bar-home .mainnav ul li {
-	display: inline-grid;
-	padding: 5px;
+nav .inner-navigation-bar-home .mainnav ul li {
+	display: none;
 }
 
-nav div.inner-navigation-bar-home .mainnav ul li a {
+nav .inner-navigation-bar-home .mainnav ul li a {
 	font-size: 14px;
 	font-family: "Trebuchet MS", "sans-serif";
-	color: black;
+	color: white;
 	padding: 5px 5px;
 	text-decoration: none;
-	display: inline-block;
+	display: none;
 	/*^ Remember to change this when you do navigation*/
 	position: relative;
 }
@@ -236,8 +223,8 @@ nav div.inner-navigation-bar-home .mainnav ul li a {
 	display: block;
 }
 
-nav ul .mainnav ul li {
-	display: inline-grid;
+nav .inner-navigation-bar .mainnav ul li {
+	display: none;
 	padding: 5px;
 }
 
@@ -287,7 +274,6 @@ nav ul .mainnav ul li a {
 	top: 30%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: aliceblue;
 }
 
 .slideshow-text-big {
@@ -326,32 +312,30 @@ nav ul .mainnav ul li a {
 
 #introduction-home {
 	border-bottom: 0.5em solid maroon;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
-#introduction-home .grid {
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: auto;
-	grid-template-areas: "heading heading" "text1 text2"
+#introduction-home .flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 #introduction-home .heading {
-	grid-area: heading;
+    
 }
 
-#introduction-home .text1 {
-	grid-area: text1;
-	font-size: 1.6em;
-	padding: 1% 8%;
-	text-align: left;
+#introduction-home .text {
+	font-size: 20px;
+	padding: 0px 20px;
 }
 
-#introduction-home .text2 {
-	grid-area: text2;
-	font-size: 1.6em;
-	padding: 1% 8%;
-	text-align: left;
-}
 
 /* Home Page - Important Dates */
 
@@ -451,12 +435,7 @@ nav ul .mainnav ul li a {
 
 /* Home Page - Events */
 
-#events-home .grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: auto;
-	grid-template-areas: ". heading heading heading heading heading ." ". . type1 type2 type3 . ." ". type4 type4 . type5 type5 ."
-}
+/* NOTE: I must use Flexbox for this when I get to it. */
 
 #events-home .heading {
 	grid-area: heading;
