@@ -4,7 +4,7 @@ ErrorDocument 403 /errors/forbid.html
 ErrorDocument 404 /errors/not-found.html
 ErrorDocument 500 /errors/server-err.html
 
-DirectoryIndex home.html
+DirectoryIndex home
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -14,11 +14,3 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 RewriteEngine On 
 RewriteCond %{HTTPS} off 
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-RewriteEngine On
-RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
-RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{2,4}
-RewriteCond %{REQUEST_URI} !/$
-RewriteRule ^(.*)$ $1.html
-Header always set Content-Security-Policy "upgrade-insecure-requests;"
