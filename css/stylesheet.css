@@ -252,7 +252,7 @@ nav ul .mainnav ul li a {
 }
 
 .slideshow-pic {
-	max-width: 100%;
+	max-width: auto;
 	max-height: 100vh;
 	z-index: 1;
 	position: relative;
