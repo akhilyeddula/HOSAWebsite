@@ -993,11 +993,16 @@ sponsorship-image
 
 /* Errors */
 
-.error400 {
-    display: inline-flex;
+.error {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.errortext {
+    width: 400px;
+    margin: 20px;
 }
 
 .error401 {
