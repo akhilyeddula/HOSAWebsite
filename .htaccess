@@ -4,7 +4,7 @@ ErrorDocument 403 /errors/forbid.html
 ErrorDocument 404 /errors/not-found.html
 ErrorDocument 500 /errors/server-err.html
 
-DirectoryIndex home
+DirectoryIndex home.html
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d

@@ -991,6 +991,63 @@ sponsorship-image
 	text-decoration: none;
 }
 
+/* Errors */
+
+.error400 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.error401 {
+    
+}
+
+.error403 {
+    
+}
+
+.errortitle {
+    margin: 40px auto;
+}
+
+.error404 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+}
+
+.error404image {
+    width: 400px;
+    height: auto;
+}
+
+.error404textbutton {
+    width: 300px;
+}
+
+.error404text {
+    width: 250px;
+    margin: 40px auto;
+}
+
+.error404button {
+	font-family: "Oswald", "sans-serif";
+	font-size: 1.3em;
+	color: black;
+	padding: 12px 24px;
+	background-color: whitesmoke;
+	border: 2px solid maroon;
+	text-decoration: none;
+    margin: 20px 30px
+}
+
+#500 {
+    
+}
+
 /* Miscellaneous */
 
 .center-text {
