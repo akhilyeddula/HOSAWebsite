@@ -311,10 +311,10 @@ nav ul .mainnav ul li a {
 /* Home Page - Introduction */
 
 #introduction-home {
-	border-bottom: 0.5em solid maroon;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
+    border-bottom: 0.5em solid maroon;
+}
+
+#introduction-home .container {
 	max-width: 1200px;
 	margin: 0 auto;
 }
@@ -323,114 +323,58 @@ nav ul .mainnav ul li a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    flex-wrap: wrap;
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
 #introduction-home .heading {
-    
+    /* Default heading, this is a placeholder */
 }
 
 #introduction-home .text {
 	font-size: 20px;
 	padding: 0px 20px;
+    width: 400px;
 }
 
+#introduction-home .border {
+    padding: 20px;
+    height: 5px;
+    width: 100%;
+}
 
 /* Home Page - Important Dates */
 
 #important-dates-home {
-	background-color: black;
+	background-color: white;
 	border-bottom: 0.5em solid maroon;
+}
+
+#important-dates-home .container {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 #important-dates-home .flex {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+    align-items: center;
 	flex-wrap: wrap;
 }
 
-#important-dates-home .heading {
-	grid-area: heading;
-	color: aliceblue;
-}
-
-#important-dates-home .date1container {
-	display: grid;
-	grid-template-areas: ". . ." ". . ." ". remindernumber ." ". . ." ". remindermonth .";
-	grid-template-columns: 33.3% 33.3% 33.3%;
-	align-items: center;
-}
-
-#important-dates-home .date1 {
-	display: grid;
-	grid-template-areas: ". . ." ". remindernumber ." ". remindermonth .";
-	grid-template-columns: 33.3% 33.3% 33.3%;
-	align-items: center;
-	width: 100px;
-	height: 100px;
-	color: aliceblue;
-	border: 0.2em solid white;
-	border-radius: 0.2em;
-}
-
-#important-dates-home .date2 {
-	display: grid;
-	align-content: center;
-	width: 100px;
-	height: 100px;
-	color: aliceblue;
-	border: 0.2em solid white;
-	border-radius: 0.2em;
-}
-
-/* Not currently in use */
-
-#important-dates-home .date3 {
-	display: grid;
-	align-content: center;
-	width: 100px;
-	height: 100px;
-	color: aliceblue;
-	border: 0.2em solid white;
-	border-radius: 0.2em;
-}
-
-#important-dates-home .date4 {
-	display: grid;
-	align-content: center;
-	width: 100px;
-	height: 100px;
-	color: aliceblue;
-	border: 0.2em solid white;
-	border-radius: 0.2em;
-}
-
-#important-dates-home .date5 {
-	display: grid;
-	align-content: center;
-	width: 100px;
-	height: 100px;
-	color: aliceblue;
-	border: 0.2em solid white;
-	border-radius: 0.2em;
-}
-
-#important-dates-home .remindernumber {
-	grid-area: remindernumber;
-	font-family: "Lato";
-	font-size: 1.5em;
+#important-dates-home h3.heading {
+    color: black;
+    text-align: center;
+    font-family: "Oswald", "sans-serif";
+	font-size: 2.0em;
 	font-weight: 500;
-	text-align: center;
 }
 
-#important-dates-home .remindermonth {
-	grid-area: remindermonth;
-	font-family: "Lato";
-}
-
-#important-dates-home p {
-	color: white;
+#important-dates-home .text {
+	font-size: 20px;
+	padding: 0px 20px;
+    width: 400px;
 }
 
 /* Home Page - Events */
