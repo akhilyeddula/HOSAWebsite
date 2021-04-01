@@ -11,14 +11,14 @@ html {
 }
 
 h1 {
-	font-family: "Oswald", "sans-serif";
+    font-family: 'Poppins', sans-serif;
 	font-size: 1.8px;
 	font-weight: 600;
 	text-align: center;
 }
 
 h2 {
-	font-family: "Oswald", "sans-serif";
+    font-family: 'Poppins', sans-serif;
 	font-size: 1.6px;
 	font-weight: 600;
 	text-align: center;
@@ -37,7 +37,7 @@ h5 {
 }
 
 p {
-	font-family: "Lato";
+	font-family: 'Open Sans', sans-serif;
 }
 
 li {
@@ -52,7 +52,6 @@ li {
 
 .heading {
 	font-size: 3.0em;
-	text-transform: uppercase;
 }
 
 .paragraphtext {
@@ -122,7 +121,7 @@ li {
 
 .logo-home {
 	width: auto;
-	height: 150px;
+	height: 110px;
 	min-width: auto;
 	min-height: auto;
 	display: inline-block;
@@ -180,7 +179,7 @@ header div.full-navigation-bar-home {
 /* Used to style the main menu elements*/
 
 nav ul li.mainnav span a {
-	font-size: 18px;
+	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 	;
 	color: white;
@@ -252,7 +251,7 @@ nav ul .mainnav ul li a {
 }
 
 .slideshow-pic {
-	max-width: auto;
+	max-width: 100%;
 	max-height: 100vh;
 	z-index: 1;
 	position: relative;
@@ -279,14 +278,14 @@ nav ul .mainnav ul li a {
 }
 
 .slideshow-text h1 {
-	font-family: 'Poppins', sans-serif;
-	font-size: 5em;
+    font-family: 'Poppins', sans-serif;	
+    font-size: 4em;
 	font-weight: 700;
 	text-shadow: 2px 4px rgba(192, 192, 192, 0.8), 2px 5px rgba(192, 192, 192, 0.8), 2px 6px rgba(192, 192, 192, 0.8);
 	color: maroon;
 	text-transform: uppercase;
 	text-align: center;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.08em;
 	word-spacing: 0.3em;
 	width: 100%;
 	top: 12%;
@@ -295,8 +294,8 @@ nav ul .mainnav ul li a {
 }
 
 .slideshow-text h4 {
-	font-family: 'Poppins', sans-serif;
-	font-size: 2.35em;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 2.15em;
 	font-weight: 600;
 	text-shadow: 1px 3px rgba(192, 192, 192, 0.8), 1px 4px rgba(192, 192, 192, 0.8);
 	color: maroon;
@@ -305,29 +304,31 @@ nav ul .mainnav ul li a {
 	letter-spacing: 0.05em;
 	word-spacing: 0.3em;
 	width: 100%;
-	bottom: 10%;
+	bottom: 8%;
 	position: relative;
 	z-index: 3;
 }
 
 .slideshow-text h5 {
-	font-family: 'Poppins', sans-serif;
-	font-size: 2.00em;
-	font-weight: 500;
-	text-shadow: 1px 3px rgba(192, 192, 192, 0.8), 1px 4px rgba(192, 192, 192, 0.8);
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 1.30em;
+	font-weight: 400;
 	text-align: center;
-	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	word-spacing: 0.3em;
 	width: 100%;
-	bottom: 28%;
+	bottom: 10%;
 	position: relative;
 	z-index: 3;
+    
 }
 
 .slideshow-text h5 a {
     color: maroon;
-
+    padding: 8px 20px;
+    border: 4px solid maroon;    
+    vertical-align: middle;
+    text-decoration: none;
 }
 
 /* Home Page - Introduction */
@@ -928,7 +929,64 @@ nav ul .mainnav ul li a {
 
 /* Sponsorship CSS */
 
-sponsorship-image
+#sponsorship .masterflex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+   
+#sponsorship .gold {
+    color: gold;
+}   
+
+#sponsorship .silver {
+    color: silver;
+}   
+
+#sponsorship .bronze {
+    color: #cd7f32;
+}
+
+#sponsorship h3 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#sponsorship .sponsor {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 30px;
+}
+
+.sponsorship-image {
+    width: 250px;
+    height: auto;
+}
+
+#sponsorship-letter h2 {
+    font-size: 2.7em;
+}
+
+#sponsorship-letter p {
+    width: 600px;
+    margin: 10px 40px;
+}
+
+#sponsorship-letter a {
+    width: 600px;
+    margin: 10px 40px;
+}
+
+#sponsorship-letter .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 /* Scholarships CSS */
 
 #scholarship-info {
