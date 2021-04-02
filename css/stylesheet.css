@@ -976,8 +976,20 @@ nav ul .mainnav ul li a {
 }
 
 #sponsorship-letter a {
-    width: 600px;
+	padding: 12px 24px;
     margin: 10px 40px;
+	font-family: "Oswald", "sans-serif";
+	font-size: 1.3em;
+	color: black;
+	background-color: whitesmoke;
+	border: 2px solid maroon;
+	text-decoration: none;
+    transition: color 0.4s, background-color 0.5s;
+}
+
+#sponsorship-letter a:hover {
+	color: white;
+	background-color: maroon;
 }
 
 #sponsorship-letter .flex {
@@ -1036,14 +1048,6 @@ nav ul .mainnav ul li a {
     margin: 20px;
 }
 
-.error401 {
-    
-}
-
-.error403 {
-    
-}
-
 .errortitle {
     margin: 40px auto;
 }
@@ -1077,11 +1081,13 @@ nav ul .mainnav ul li a {
 	background-color: whitesmoke;
 	border: 2px solid maroon;
 	text-decoration: none;
-    margin: 20px 30px
+    margin: 20px 30px;
+    transition: color 0.4s, background-color 0.5s;
 }
 
-#500 {
-    
+.error404button:hover {
+	color: white;
+	background-color: maroon;
 }
 
 /* Miscellaneous */
