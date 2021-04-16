@@ -359,6 +359,7 @@ nav ul .mainnav ul li a {
 }
 
 #introduction-home .heading {
+	display: none;
     /* Default heading, this is a placeholder */
 }
 
@@ -369,7 +370,8 @@ nav ul .mainnav ul li a {
 }
 
 #introduction-home .border {
-    /* Not needed right now, more of a placeholder */
+    display: none;
+	/* Not needed right now, more of a placeholder */
 }
 
 /* Home Page - Important Dates */
@@ -933,6 +935,19 @@ nav ul .mainnav ul li a {
 	box-shadow: 10px 10px 5px grey;
 	border-radius: 5px;
 }
+
+/* Community Service CSS */
+
+#communityservice-title .flex {
+    display: flex;
+    justify-content: center;
+}
+
+#communityservice-title .flex p {
+    max-width: 800px;
+}
+
+
 
 /* Sponsorship CSS */
 
