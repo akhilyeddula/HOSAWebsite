@@ -210,8 +210,9 @@ nav ul li ul li a:hover {
 	text-decoration: none;
 	display: none;
 	/*^ Remember to change this when you do navigation*/
-	position: relative;
-} */
+	/*position: relative;
+}
+*/
 
 .dropdown {
 	position: relative;
