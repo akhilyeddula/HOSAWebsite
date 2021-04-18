@@ -41,7 +41,7 @@ p {
 }
 
 li {
-    font-family: "Lato";
+    font-family: "Open Sans";
 }
 
 /* Sitewide General Items */
@@ -494,24 +494,33 @@ nav ul .mainnav ul li a {
 }
 
 .list-text li {
-	font-family: "Lato";
+	font-family: "Open Sans";
 	font-size: 1.2em;
 	color: dimgrey;
 	max-width: 600px;
 }
 
-#aboutus .flex {
-	display: inline-flex;
+#our-goals-creed {
+	display: flex;
 	justify-content: center;
     align-items: center;
 	flex-wrap: wrap;
 }
 
+#our-goals-creed div {
+	margin: 20px;
+}
+
 #Our-Creed .list-text {
-	font-family: "Lato";
-	font-size: 1.2em;
+	font-family: "Open Sans";
+	font-size: 1.1em;
 	color: dimgrey;
 	max-width: 600px;
+	list-style: none;
+}
+
+#Our-Creed li {
+	margin: 0px 0px 10px 0px;
 }
 
 /* Meet the Officers CSS */
