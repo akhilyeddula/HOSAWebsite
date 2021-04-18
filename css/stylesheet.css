@@ -10,6 +10,10 @@ html {
 	font-size: 100%;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 h1 {
     font-family: 'Poppins', sans-serif;
 	font-size: 1.8px;
@@ -108,33 +112,16 @@ li {
 	height: auto;
 }
 
-.logo {
-	width: auto;
-	height: 110px;
-	min-width: auto;
-	min-height: auto;
-	display: inline-block;
-	padding: 0.6em;
-	margin-bottom: 0.2em;
-	vertical-align: middle;
-}
-
-.logo-home {
-	width: auto;
-	height: 110px;
-	min-width: auto;
-	min-height: auto;
-	display: inline-block;
-	padding: 0.6em;
-	margin-bottom: 0.2em;
-	vertical-align: middle;
+nav {
+	width: 100%;
+	height: 125px;
 }
 
 .inner-navigation-bar {
 	list-style: none;
 	padding: 0;
 	margin: auto 1%;
-	display: flex;
+	display: inline-flex;
 	justify-content: center; 
 	align-items: center;
 }
@@ -151,50 +138,69 @@ li {
 
 .full-navigation-bar {
 	position: relative;
-	z-index: 4;
-	overflow-x: hidden;
-}
-
-.full-navigation-bar-home {
-	position: fixed;
-	z-index: 4;
-}
-
-/* This is the navigation for every other page (maroon colored)*/
-
-header div.full-navigation-bar {
 	background-color: maroon;
 	margin: 0;
  	width: 100vw;
 	z-index: 3;
 }
 
-header div.full-navigation-bar-home {
+.full-navigation-bar-home {
+	position: fixed;
 	background-color: rgba(0, 0, 0, 0.5);
 	margin: 0;
 	padding-bottom: 0px;
 	width: 100vw;
 }
 
+/* This is the navigation for every other page (maroon colored)*/
+
 /* Used to style the main menu elements*/
 
-nav ul li.mainnav span a {
+nav ul li {
+	list-style: none;
+	position: relative;
+}
+
+nav ul li a {
+	display: block;
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 	;
 	color: white;
 	padding: 10px 10px;
 	text-decoration: none;
-	display: inline;
 }
 
-/* Used to style the sub menu elements*/
-
-nav .inner-navigation-bar-home .mainnav ul li {
+nav ul li ul {
 	display: none;
+	position: absolute;
+	padding: 10px;
+	background-color: hsla(0, 100%, 25%, 0.98);
+	border-radius: 0px 0px 4px 4px;
+	transition: display 1s;
 }
 
-nav .inner-navigation-bar-home .mainnav ul li a {
+nav ul li:hover ul {
+	display: block;
+}
+
+nav ul li ul li {
+	width: 160px;
+	border-radius: 4px;
+}
+
+nav ul li ul li a {
+	padding: 10px 10px;
+	font-size: 14px;
+	background-color: none;
+	transition: background-color 0.25s;
+}
+
+nav ul li ul li a:hover {
+	background-color: rgb(165, 34, 34);
+}
+
+/* nav ul li ul li a {
 	font-size: 14px;
 	font-family: "Trebuchet MS", "sans-serif";
 	color: white;
@@ -203,7 +209,7 @@ nav .inner-navigation-bar-home .mainnav ul li a {
 	display: none;
 	/*^ Remember to change this when you do navigation*/
 	position: relative;
-}
+} */
 
 .dropdown {
 	position: relative;
@@ -224,20 +230,26 @@ nav .inner-navigation-bar-home .mainnav ul li a {
 	display: block;
 }
 
-nav .inner-navigation-bar .mainnav ul li {
-	display: none;
-	padding: 5px;
+.logo {
+	width: auto;
+	height: 110px;
+	min-width: auto;
+	min-height: auto;
+	display: inline-block;
+	padding: 0.6em;
+	margin-bottom: 0.2em;
+	vertical-align: middle;
 }
 
-nav ul .mainnav ul li a {
-	font-size: 14px;
-	font-family: "Trebuchet MS", "sans-serif";
-	color: black;
-	padding: 5px 5px;
-	text-decoration: none;
-	display: none;
-	/*^ Remember to change this when you do navigation*/
-	position: relative;
+.logo-home {
+	width: auto;
+	height: 110px;
+	min-width: auto;
+	min-height: auto;
+	display: inline-block;
+	padding: 0.6em;
+	margin-bottom: 0.2em;
+	vertical-align: middle;
 }
 
 /* Home Page - Slideshow */
@@ -526,10 +538,6 @@ nav ul .mainnav ul li a {
 
 /* Meet the Officers CSS */
 
-#meettheofficers {
-	overflow-x: hidden;
-}
-
 #officers {
 	display: flex;
 	justify-content: center;
@@ -578,6 +586,8 @@ nav ul .mainnav ul li a {
 }
 
 /* Club Registration CSS */
+
+main 
 
 /* Event Registration*/
 
