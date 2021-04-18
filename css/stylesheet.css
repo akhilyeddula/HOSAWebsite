@@ -150,8 +150,9 @@ li {
 }
 
 .full-navigation-bar {
-	position: fixed;
+	position: relative;
 	z-index: 4;
+	overflow-x: hidden;
 }
 
 .full-navigation-bar-home {
@@ -525,99 +526,49 @@ nav ul .mainnav ul li a {
 
 /* Meet the Officers CSS */
 
-#officers-grid {
-	display: grid;
-	grid-template-areas: "officer1 officer2 officer3" "officer4 officer5 officer6" "officer7 officer8 officer9" "officer10 officer11 officer12" ". advisors .";
-	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: auto;
-	grid-row-gap: 20px;
+#meettheofficers {
+	overflow-x: hidden;
+}
+
+#officers {
+	display: flex;
+	justify-content: center;
+    align-items: top;
+	flex-wrap: wrap;
 }
 
 .officer-card {
-	background-color: whitesmoke;
-	width: 80%;
-	height: auto;
-	max-height: auto;
-	box-shadow: 10px 10px 5px grey;
+	background-color: white;
+	max-width: 400px;
+	box-shadow: 0px 0px 10px grey;
 	border-radius: 5px;
-	align-content: center;
-	overflow: hidden;
+	text-align: center;
+	margin: 20px;
 }
 
 .officer-image {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-.officer1 {
-	grid-area: officer1;
-}
-
-.officer2 {
-	grid-area: officer2;
-}
-
-.officer3 {
-	grid-area: officer3;
-}
-
-.officer4 {
-	grid-area: officer4;
-}
-
-.officer5 {
-	grid-area: officer5;
-}
-
-.officer6 {
-	grid-area: officer6;
-}
-
-.officer7 {
-	grid-area: officer7;
-}
-
-.officer8 {
-	grid-area: officer8;
-}
-
-.officer9 {
-	grid-area: officer9;
-}
-
-.officer10 {
-	grid-area: officer10;
-}
-
-.officer11 {
-	grid-area: officer11;
-}
-
-.officer12 {
-	grid-area: officer12;
-}
-
-.advisors {
-	grid-area: advisors;
-}
-
-.officer-name {
-	font-family: "Oswald", "sans-serif";
-	font-size: 1.6em;
-	text-align: center;
+	width: 100%;
 }
 
 .officer-title {
-	font-family: "Oswald", "sans-serif";
+	font-family: "Poppins";
+	font-size: 1.6em;
+	padding: 0px 25px;
+	height: 50px;
+}
+
+.officer-name {
+	font-family: "Open Sans";
 	font-weight: bold;
 	font-size: 1.2em;
 	text-align: center;
 }
 
-.officer-description {
+.officer-blurb {
 	font-size: 1.0em;
 	text-align: justify;
-	margin: 15px;
+	padding: 0px 25px;
+	height: 230px;
 }
 
 .officer-telegram {
