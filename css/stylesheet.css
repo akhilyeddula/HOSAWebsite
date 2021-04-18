@@ -177,11 +177,13 @@ nav ul li ul {
 	padding: 10px;
 	background-color: hsla(0, 100%, 25%, 0.98);
 	border-radius: 0px 0px 4px 4px;
-	transition: display 1s;
+	opacity: 0%;
+	transition: opacity 1s;
 }
 
 nav ul li:hover ul {
 	display: block;
+	opacity: 100%;
 }
 
 nav ul li ul li {
