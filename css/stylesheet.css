@@ -115,6 +115,8 @@ li {
 nav {
 	width: 100%;
 	height: 125px;
+	display: flex;
+	justify-content: center;
 }
 
 .inner-navigation-bar {
@@ -137,7 +139,7 @@ nav {
 }
 
 .full-navigation-bar {
-	position: relative;
+	position: fixed;
 	background-color: maroon;
 	margin: 0;
  	width: 100vw;
@@ -150,11 +152,19 @@ nav {
 	margin: 0;
 	padding-bottom: 0px;
 	width: 100vw;
+	z-index: 3;
+
+}
+
+nav.full-navigation-bar-home ul li ul {
+	background-color: hsla(0, 0%, 27%, 0.98);
+}
+
+nav.full-navigation-bar-home ul li ul li a:hover {
+	background-color: rgb(155, 155, 155);
 }
 
 /* This is the navigation for every other page (maroon colored)*/
-
-/* Used to style the main menu elements*/
 
 nav ul li {
 	list-style: none;
@@ -174,11 +184,11 @@ nav ul li a {
 nav ul li ul {
 	display: none;
 	position: absolute;
-	padding: 10px;
-	background-color: hsla(0, 100%, 25%, 0.98);
-	border-radius: 0px 0px 4px 4px;
-	opacity: 0%;
+	padding: 0px 0px;
+	background-color: rgba(128, 0, 0, 0.96);
+	border-radius: 4px 4px;
 	transition: opacity 1s;
+	box-shadow: 0px 0px 8px rgba(26, 26, 26, 0.86);
 }
 
 nav ul li:hover ul {
@@ -195,43 +205,14 @@ nav ul li ul li a {
 	padding: 10px 10px;
 	font-size: 14px;
 	background-color: none;
-	transition: background-color 0.25s;
+	transition: background-color 0.25s; 
+
 }
 
 nav ul li ul li a:hover {
-	background-color: rgb(165, 34, 34);
+	background-color: rgb(167, 57, 57);
 }
 
-/* nav ul li ul li a {
-	font-size: 14px;
-	font-family: "Trebuchet MS", "sans-serif";
-	color: white;
-	padding: 5px 5px;
-	text-decoration: none;
-	display: none;
-	/*^ Remember to change this when you do navigation*/
-	/*position: relative;
-}
-*/
-
-.dropdown {
-	position: relative;
-	display: inline-block;
-}
-
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f9f9f9;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	padding: 12px 16px;
-	z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
-}
 
 .logo {
 	width: auto;
