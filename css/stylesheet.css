@@ -45,7 +45,7 @@ p {
 }
 
 li {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 /* Sitewide General Items */
@@ -187,11 +187,11 @@ nav ul li a:hover {
 }
 
 nav ul li ul {
-	display: none;
 	position: absolute;
 	padding: 0px 0px;
 	background-color: rgba(128, 0, 0, 0.96);
 	border-radius: 4px 4px;
+	opacity: 0%;
 	transition: opacity 1s;
 	box-shadow: 0px 0px 8px rgba(26, 26, 26, 0.86);
 }
@@ -489,6 +489,11 @@ nav ul li ul li a:hover {
 	margin: 10px 20px;
 }
 
+#Who-We-Are .paragraphtext {
+	max-width: 600px;
+	margin: 20px 20px;
+}
+
 .whoweare-picture {
 	max-width: 500px;
 	height: auto;
@@ -532,6 +537,7 @@ nav ul li ul li a:hover {
 	justify-content: center;
     align-items: top;
 	flex-wrap: wrap;
+	max-width: 1400px;
 }
 
 .officer-card {
@@ -539,7 +545,6 @@ nav ul li ul li a:hover {
 	max-width: 400px;
 	box-shadow: 0px 0px 10px grey;
 	border-radius: 5px;
-	text-align: center;
 	margin: 20px;
 }
 
@@ -552,6 +557,7 @@ nav ul li ul li a:hover {
 	font-size: 1.6em;
 	padding: 0px 25px;
 	height: 50px;
+	text-align: center;
 }
 
 .officer-name {
