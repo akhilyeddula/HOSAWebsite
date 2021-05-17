@@ -341,11 +341,13 @@ nav ul li ul li a:hover {
 
 /* Home Page - Introduction */
 
+/*
 #introduction-home {
-    /*
+    
 	border-bottom: 0.5em solid maroon;
-	*/
+	
 }
+*/
 
 #introduction-home .container {
 	max-width: 1200px;
@@ -582,7 +584,23 @@ nav ul li ul li a:hover {
 
 /* Club Registration CSS */
 
-main 
+#club-form p.blurb {
+	max-width: 1000px;
+}
+
+ #club-form .flex {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+	max-width: 1200px;
+ }
+
+ #club-form .flex img {
+	width: 350px;
+	height: auto;
+	padding: 20px;
+ }
 
 /* Event Registration*/
 
