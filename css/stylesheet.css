@@ -664,7 +664,6 @@ nav ul li ul li a:hover {
 }
 
 .guidelines-button {
-	grid-area: guidelines-button;
 	font-family: "Oswald", "sans-serif";
 	font-size: 1.3em;
 	color: black;
@@ -813,28 +812,47 @@ nav ul li ul li a:hover {
 
 /* Newsletters CSS */
 
-.newsletters-container {
-	width: 20%;
+.newsletter-flex {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+	max-width: 1400px;
 }
 
-.newletters-bullet {
-	padding: 12px 24px;
-	border: 3px solid maroon;
-	border-radius: 3px;
-	list-style: none;
-	width: 20%;
+.newsletter-card {
+	background-color: whitesmoke;
+	width: 400px;
+	height: 180px;
+	box-shadow: 10px 10px 5px grey;
+	border-radius: 5px;
+	margin: 20px;
 }
 
-.newsletters-bullet>a:hover {
-	background-color: white;
+.newsletter-name {
+	font-family: "Oswald", "sans-serif";
+	font-size: 1.6em;
+	text-align: center;
 }
 
-.newletters-bullet>a:link {
+.newsletter-button {
 	font-family: "Oswald", "sans-serif";
 	font-size: 1.3em;
-	color: black;
 	text-decoration: none;
+	color: black;
+	padding: 12px 24px;
+	background-color: whitesmoke;
+	border: 2px solid maroon;
+	width: 80%;
+	text-align: center;
 }
+
+.newsletter-button:hover {
+	transition-duration: 0.4s;
+	color: white;
+	background-color: maroon;
+}
+
 
 /* Errors */
 
