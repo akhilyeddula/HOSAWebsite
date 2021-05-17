@@ -617,300 +617,42 @@ nav ul li ul li a:hover {
 
 /* Event Resources CSS */
 
-#resources-grid-objective {
-	display: grid;
-	grid-template-areas: "objectiveheading objectiveheading objectiveheading" "objective-event1 objective-event2 objective-event3" "objective-event4 objective-event5 objective-event6" "objective-event7 objective-event8 objective-event9" "objective-event10 objective-event11 objective-event12" "objective-event13 none objective-event14";
-	;
-	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: auto;
-	grid-row-gap: 20px;
-}
-
-.objective-resource-heading {
-	grid-area: objectiveheading;
-}
-
-.objective-event1 {
-	grid-area: objective-event1;
-}
-
-.objective-event2 {
-	grid-area: objective-event2;
-}
-
-.objective-event3 {
-	grid-area: objective-event3;
-}
-
-.objective-event4 {
-	grid-area: objective-event4;
-}
-
-.objective-event5 {
-	grid-area: objective-event5;
-}
-
-.objective-event6 {
-	grid-area: objective-event6;
-}
-
-.objective-event7 {
-	grid-area: objective-event7;
-}
-
-.objective-event8 {
-	grid-area: objective-event8;
-}
-
-.objective-event9 {
-	grid-area: objective-event9;
-}
-
-.objective-event10 {
-	grid-area: objective-event10;
-}
-
-.objective-event11 {
-	grid-area: objective-event11;
-}
-
-.objective-event12 {
-	grid-area: objective-event12;
-}
-
-.objective-event13 {
-	grid-area: objective-event13;
-}
-
-.objective-event14 {
-	grid-area: objective-event14;
-}
-
-#resources-grid-hybrid {
-	display: grid;
-	grid-template-areas: "hybridheading hybridheading hybridheading" "hybrid-event1 hybrid-event2 hybrid-event3" "hybrid-event4 hybrid-event5 hybrid-event6" "hybrid-event7 hybrid-event8 hybrid-event9" "hybrid-event10 hybrid-event11 hybrid-event12" "hybrid-event13 hybrid-event14 hybrid-event15" "hybrid-event16 none hybrid-event17";
-	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: auto;
-	grid-row-gap: 20px;
-}
-
-.hybrid-resource-heading {
-	grid-area: hybridheading;
-}
-
-.hybrid-event1 {
-	grid-area: hybrid-event1;
-}
-
-.hybrid-event2 {
-	grid-area: hybrid-event2;
-}
-
-.hybrid-event3 {
-	grid-area: hybrid-event3;
-}
-
-.hybrid-event4 {
-	grid-area: hybrid-event4;
-}
-
-.hybrid-event5 {
-	grid-area: hybrid-event5;
-}
-
-.hybrid-event6 {
-	grid-area: hybrid-event6;
-}
-
-.hybrid-event7 {
-	grid-area: hybrid-event7;
-}
-
-.hybrid-event8 {
-	grid-area: hybrid-event8;
-}
-
-.hybrid-event9 {
-	grid-area: hybrid-event9;
-}
-
-.hybrid-event10 {
-	grid-area: hybrid-event10;
-}
-
-.hybrid-event11 {
-	grid-area: hybrid-event11;
-}
-
-.hybrid-event12 {
-	grid-area: hybrid-event12;
-}
-
-.hybrid-event13 {
-	grid-area: hybrid-event13;
-}
-
-.hybrid-event14 {
-	grid-area: hybrid-event14;
-}
-
-.hybrid-event15 {
-	grid-area: hybrid-event15;
-}
-
-#resources-grid-performance {
-	display: grid;
-	grid-template-areas: "performanceheading performanceheading performanceheading" "performance-event1 performance-event2 performance-event3" "performance-event4 performance-event5 performance-event6" "performance-event7 performance-event8 performance-event9" "performance-event10 performance-event11 performance-event12" "performance-event13 performance-event14 performance-event15" "performance-event16 performance-event17 performance-event18";
-	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: auto;
-	grid-row-gap: 20px;
-}
-
-.performance-resource-heading {
-	grid-area: performanceheading;
-}
-
-.performance-event1 {
-	grid-area: performance-event1;
-}
-
-.performance-event2 {
-	grid-area: performance-event2;
-}
-
-.performance-event3 {
-	grid-area: performance-event3;
-}
-
-.performance-event4 {
-	grid-area: performance-event4;
-}
-
-.performance-event5 {
-	grid-area: performance-event5;
-}
-
-.performance-event6 {
-	grid-area: performance-event6;
-}
-
-.performance-event7 {
-	grid-area: performance-event7;
-}
-
-.performance-event8 {
-	grid-area: performance-event8;
-}
-
-.performance-event9 {
-	grid-area: performance-event9;
-}
-
-.performance-event10 {
-	grid-area: performance-event10;
-}
-
-.performance-event11 {
-	grid-area: performance-event11;
-}
-
-.performance-event12 {
-	grid-area: performance-event12;
-}
-
-.performance-event13 {
-	grid-area: performance-event13;
-}
-
-.performance-event14 {
-	grid-area: performance-event14;
-}
-
-.performance-event15 {
-	grid-area: performance-event15;
-}
-
-#resources-grid-recognition {
-	display: grid;
-	grid-template-areas: "recognitionheading recognitionheading recognitionheading" "recognition-event1 recognition-event2 recognition-event3" "recognition-event4 recognition-event5 recognition-event6";
-	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: auto;
-	grid-row-gap: 20px;
-}
-
-.recognition-resource-heading {
-	grid-area: recognitionheading;
-}
-
-.recognition-event1 {
-	grid-area: recognition-event1;
-}
-
-.recognition-event2 {
-	grid-area: recognition-event2;
-}
-
-.recognition-event3 {
-	grid-area: recognition-event3;
-}
-
-.recognition-event4 {
-	grid-area: recognition-event4;
-}
-
-.recognition-event5 {
-	grid-area: recognition-event5;
-}
-
-.recognition-event6 {
-	grid-area: recognition-event6;
-}
-
 .event-card {
-	display: grid;
-	grid-template-areas: "event-name event-name" "event-title event-title" "event-description event-description" "resource-button guidelines-button";
-	grid-template-columns: 45% 45%;
-	grid-template-rows: auto;
-	grid-column-gap: 10%;
 	background-color: whitesmoke;
-	width: 80%;
-	height: auto;
-	max-height: auto;
+	width: 400px;
+	height: 180px;
 	box-shadow: 10px 10px 5px grey;
 	border-radius: 5px;
+	margin: 20px;
 }
 
 .event-name {
-	grid-area: event-name;
 	font-family: "Oswald", "sans-serif";
 	font-size: 1.6em;
 	text-align: center;
 }
 
-.event-title {
-	grid-area: event-title;
-	font-family: "Oswald", "sans-serif";
-	font-weight: bold;
-	font-size: 1.2em;
-	text-align: center;
-}
-
+/*
 .event-description {
-	grid-area: event-description;
 	font-size: 1.0em;
 	text-align: justify;
 	margin: 15px;
 }
+*/
+
+.buttons-flex {
+	display: flex;
+	justify-content:space-around;
+}
 
 .resource-button {
-	grid-area: resource-button;
 	font-family: "Oswald", "sans-serif";
 	font-size: 1.3em;
 	color: black;
 	padding: 12px 24px;
 	background-color: whitesmoke;
 	border: 2px solid maroon;
-	width: 95%;
+	width: 150px;
 	text-align: center;
 	display: inline-block
 }
@@ -929,7 +671,7 @@ nav ul li ul li a:hover {
 	padding: 12px 24px;
 	background-color: whitesmoke;
 	border: 2px solid maroon;
-	width: 95%;
+	width: 150px;
 	text-align: center;
 	display: inline-block
 }
@@ -940,19 +682,38 @@ nav ul li ul li a:hover {
 	background-color: maroon;
 }
 
-.resource-event-card {
-	display: grid;
-	grid-template-areas: "event-name event-name" "event-title event-title" "event-description event-description" "guidelines-button guidelines-button";
-	grid-template-columns: 45% 45%;
-	grid-template-rows: auto;
-	grid-column-gap: 10%;
-	background-color: whitesmoke;
-	width: 80%;
-	height: auto;
-	max-height: auto;
-	box-shadow: 10px 10px 5px grey;
-	border-radius: 5px;
+#resources-objective .resource-cards {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+	max-width: 1400px;
 }
+
+#resources-hybrid .resource-cards {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+	max-width: 1400px;
+}
+
+#resources-performance .resource-cards {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+	max-width: 1400px;
+}
+
+#resources-recognition .resource-cards {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+	max-width: 1400px;
+}
+
 
 /* Community Service CSS */
 
