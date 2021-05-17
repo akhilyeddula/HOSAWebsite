@@ -588,19 +588,19 @@ nav ul li ul li a:hover {
 	max-width: 1000px;
 }
 
- #club-form .flex {
+#club-form .flex {
 	display: flex;
 	justify-content: center;
     align-items: center;
 	flex-wrap: wrap;
 	max-width: 1200px;
- }
+}
 
- #club-form .flex img {
+#club-form .flex img {
 	width: 350px;
 	height: auto;
 	padding: 20px;
- }
+}
 
 /* Event Registration*/
 
