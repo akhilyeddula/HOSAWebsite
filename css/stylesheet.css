@@ -806,8 +806,9 @@ nav ul li ul li a:hover {
 	margin: 20px;
 }
 
-#scholarship-info div li {
-	font-family: "Lato";
+#scholarship-info .list-text li {
+	padding: 5px 0px;
+	max-width: 1000px;
 }
 
 /* Newsletters CSS */
