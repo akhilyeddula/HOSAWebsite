@@ -64,17 +64,19 @@ li {
 	line-height: 1.3em;
 }
 
-.footer {
+footer {
 	display: flex;
 	justify-content: center;
 	align-content: center;
+	position: absolute;
+	bottom: 0;
 	width: 100%;
 	height: 50px;
 	margin-top: 20px;
 	background-color: maroon;
 }
 
-.footer p {
+footer .paragraphtext {
 	color: #fff;
 	font-size: 0.9em;
 }
