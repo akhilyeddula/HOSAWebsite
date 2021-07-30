@@ -859,6 +859,134 @@ nav ul li ul li a:hover {
 	background-color: maroon;
 }
 
+/* Login Page  */
+.login{ 
+    color:black;
+    font-size: 2.0em;
+    font-family:"Poppins";
+    text-align: center;
+    }
+    
+    .loginbox {
+    color: white; 
+    font-family:"oswald", "sans-serif";
+    font-size: 25px; 
+    font-weight: bold; 
+    border-style: solid;
+    width: 40%;
+    margin: auto;
+    border-color: black;
+    background-color: rgb(133, 20, 20);
+    box-shadow: 10px 10px 5px grey;
+    text-align: center;   
+    }
+    
+    input[type=text] {
+     height: 35px;
+     text-align: center; 
+     width:50% ; 
+    font-weight: bold;
+    font-size: 15px;
+    font-family: open Sans;
+    border-color: black
+    
+    }
+    
+    button[type=submit]{
+    height: 35px;
+    width: 45%;
+    background-color: goldenrod;
+    border-color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "oswald", "sans-serif";
+    }
+    
+    .benefits{
+	float: center;
+	margin: 8px;
+    color:black;
+    font-family: "open sans";
+	font-size: 25px;
+	font-weight: bold;
+    text-align: center;
+    }
+    
+    .benefits-li{
+	display: inline-block;
+	padding: 0px;
+	padding-left: 45px;
+	text-align: left;
+	font-size: 16px; 
+	font-family: "open sans";
+	color: dimgray;
+    }
+    
+    .frq{
+	list-style-type: none;
+	margin-top: -10px;
+	float: center;
+    color: black;
+    font-family: "open sans";
+	font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    }
+
+	.frq-li{
+		display: inline-block;
+	    padding: 0px;
+		padding-left: 5px;
+		margin-top: -20px;
+		text-align: left;
+		font-size: 16px;
+		font-family: "open sans";
+		color: dimgray;
+	}
+
+    ::placeholder{
+    color: rgb(80, 80, 80);
+    }
+
+/* Information Page */
+   table{
+	   font-size: 20px;
+	   font-family: "oswald";
+	   width: 40%;
+	   margin-left: auto;
+	   margin-right: auto;
+	   box-shadow: 10px 10px 5px grey;
+   }	
+
+   table,th,td {
+	   border: 1px solid black;
+	   border-collapse: collapse;
+   }
+
+   th,td{
+	padding: 10px ;
+	text-align: center;
+   }
+
+   th{
+	   text-align: center;
+	   background-color: maroon;
+	   color: white;
+   }
+
+   td{
+	   padding: 15px;
+   }
+
+   tr:nth-child(even){
+	   background-color: lightgray;
+   }
+
+
+   
+
+
+
 
 /* Errors */
 
