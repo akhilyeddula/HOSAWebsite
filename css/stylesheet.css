@@ -93,6 +93,12 @@ footer .paragraphtext {
 	padding: 10px 10%;
 }
 
+hr {
+	width: 80%;
+	border-width: 2px;
+	border-color: lightgray;
+}
+
 /* Home Page CSS */
 
 /* Navigation Bar */
