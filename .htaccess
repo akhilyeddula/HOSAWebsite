@@ -14,3 +14,5 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 RewriteEngine On 
 RewriteCond %{HTTPS} off 
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+PassengerNodejs /home/truptimayee/.nvm/versions/node/v12.22.6/bin/node
