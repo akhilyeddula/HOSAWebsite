@@ -181,6 +181,7 @@ nav.full-navigation-bar-home ul li ul li a:hover {
 nav ul li {
 	list-style: none;
 	position: relative;
+	color: rgb(236, 236, 236);
 }
 
 nav ul li a {
